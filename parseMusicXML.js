@@ -193,7 +193,7 @@ function addNotations() {
                             var index = lodash.indexOf(arrayToHoldEachInstrumentSeperately[i], lodash.find(arrayToHoldEachInstrumentSeperately[i], x));
                        
                             console.log(index);
-                            console.log('Start position', arrayToHoldEachInstrumentSeperately[i][index])
+                            console.log('Startposition', arrayToHoldEachInstrumentSeperately[i][index])
                             console.log('END posigion', arrayToHoldEachInstrumentSeperately[i][j] )
                             arrayToHoldTieEnds.push(arrayToHoldEachInstrumentSeperately[i][j])
                         }
