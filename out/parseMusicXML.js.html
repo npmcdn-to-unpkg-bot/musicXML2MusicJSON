@@ -26,19 +26,15 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>//vendor libraries
-var fs = require('fs');
+            <pre class="prettyprint source linenums"><code>var fs = require('fs');
 var xml2js = require('xml2js');
 var parser = new xml2js.Parser();
 var lodash = require('lodash');
 var async = require('async');
-// my libraries
 var parseMusicXMLUtilities = require('./parseMusicXMLUtilities')
-    // const
 var NOTES_IN_OCTAVE = 12
 var MIDI_NUMBER_WHEN_REST = -1
 var OFFSET_FOR_OCTAVE_ZERO = 1
-    // object var
 var parsedXML;
 var allNotes;
 var arrayToHoldParts = []
@@ -50,15 +46,12 @@ var arrayToHoldInstrumentNames = [];
 var arrayToHoldVoiceNames = [];
 var arrayToHoldSingleInstrument = [];
 var arrayToHoldEachInstrumentSeperately = [];
-// startValue var
 var timeLineCounter = 0;
 var currentMeasureCounter = 0;
 var currentInstrument = -1;
 var currentDuration = 0;
 var arrayToHoldTieStarts = [];
 var arrayToHoldTieEnds = [];
-
-
 /**
  * &lt;p>Processes raw html and will take any MusicXML file&lt;/p>
  * &lt;p>Testing completed from MusicXML from Sibelius and Musescore&lt;/p>
@@ -73,7 +66,6 @@ function extractNoteEventsFromParsedXML() {
             for (var k = 0; k &lt; arrayToHoldParts[i][j].note.length; k++) {
                 noteStorer = {};
                 noteStorer.measure = arrayToHoldParts[i][j]["$"]["number"]
-                    //console.log(JSON.stringify(noteStorer.measure))
                 noteStorer.duration = arrayToHoldParts[i][j].note[k].duration[0]
                 noteStorer.pitch = arrayToHoldParts[i][j].note[k].pitch
                 noteStorer.rest = arrayToHoldParts[i][j].note[k].rest
@@ -81,7 +73,6 @@ function extractNoteEventsFromParsedXML() {
                 noteStorer.voice = arrayToHoldParts[i][j].note[k].voice
                 try {
                     noteStorer.notations = arrayToHoldParts[i][j].note[k].notations
-                        //console.log(JSON.stringify(noteStorer.tie));
                 }
                 catch (err) {
                     noteStorer.notations = 'false'
@@ -95,7 +86,6 @@ function extractNoteEventsFromParsedXML() {
         }
     }
 }
-
 /**
  * Represents something there.
  * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
@@ -126,11 +116,9 @@ function cleanNoteEvents() {
         cleanedNoteStorer.instrument = parseMusicXMLUtilities.cleanInstrumentToString(arrayToHoldNotes[i].instrument);
         cleanedNoteStorer.currentVoice = parseInt(currentVoice[0]);
         cleanedNoteStorer.notations = arrayToHoldNotes[i].notations;
-        //console.log(cleanedNoteStorer.tie)
         arrayToHoldCleanedNotes.push(cleanedNoteStorer);
     }
 }
-
 /**
  * Represents something there.
  * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
@@ -146,7 +134,6 @@ function getListOfDifferentVoices() {
     }
     //console.log(arrayToHoldVoiceNames)
 }
-
 /**
  * Represents something there.
  * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
@@ -161,8 +148,6 @@ function getListOfDifferentInstrumentNames() {
         }
     }
 }
-
-
 /**
  * Represents something there.
  * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
@@ -181,8 +166,6 @@ function groupByInstrument() {
         arrayToHoldSingleInstrument = [];
     }
 }
-
-
 /**
  * Represents something there.
  * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
@@ -209,13 +192,13 @@ function breakUpVoicesAndChords() {
                         arrayToHoldEachInstrumentSeperately[j][k].location = timeLineCounter - currentDuration;
                         //console.log(JSON.stringify(arrayToHoldEachInstrumentSeperately[j][k]))
                     }
+                    arrayToHoldEachInstrumentSeperately[j][k].durationWithNotations = arrayToHoldEachInstrumentSeperately[j][k].duration;
                 }
             }
         }
-        //console.log(JSON.stringify(arrayToHoldEachInstrumentSeperately, null, 5));
+        console.log(JSON.stringify(arrayToHoldEachInstrumentSeperately, null, 5));
     }
 }
-
 /**
  * Represents something there.
  * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
@@ -227,24 +210,19 @@ function addNotations() {
     for (var i = 0; i &lt; arrayToHoldEachInstrumentSeperately.length; i++) {
         for (var j = 0; j &lt; arrayToHoldEachInstrumentSeperately[i].length; j++) {
             if (arrayToHoldEachInstrumentSeperately[i][j].notations) {
-                console.log(JSON.stringify(arrayToHoldEachInstrumentSeperately[i][j].notations, null, 2));
                 if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].tied) {
                     for (k = 0; k &lt; arrayToHoldEachInstrumentSeperately[i][j].notations[0].tied.length; k++) {
                         var tieType = arrayToHoldEachInstrumentSeperately[i][j].notations[0].tied[k].$.type
                         if (tieType == 'start') {
-                            //console.log('START', tieType)
                             arrayToHoldTieStarts.push(arrayToHoldEachInstrumentSeperately[i][j])
                         }
                         else {
-                            //console.log('END', tieType)
                             var x = arrayToHoldTieStarts.pop();
                             //console.log('Start position', x)
                             //console.log('END posigion', arrayToHoldEachInstrumentSeperately[i][j] )
                             arrayToHoldTieEnds.push(arrayToHoldEachInstrumentSeperately[i][j])
                         }
                     }
-                    //console.log(JSON.stringify(arrayToHoldTieEnds, null, 2));
-                    //console.log(arrayToHoldEachInstrumentSeperately[i][j].notations[0].tied.length)
                     var tieNotation = arrayToHoldEachInstrumentSeperately[i][j].notations[0].tied[0].$;
                 }
                 else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].fermata) {
@@ -259,11 +237,9 @@ function addNotations() {
                 else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].glissando) {
                     console.log("HEREERERE")
                 }
-                
                 else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].ornaments) {
                     console.log("HEREERERE")
                 }
-      
                 else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].slide) {
                     console.log("HEREERERE")
                 }
@@ -284,8 +260,6 @@ function addNotations() {
     }
 }
 // ASYNC
-
-
 module.exports.parseRawMusicXML = function (pathToFile) {
     async.series([
     function (callback) {
@@ -299,11 +273,13 @@ module.exports.parseRawMusicXML = function (pathToFile) {
 
 
 
+
         
         , function (callback) {
             extractNoteEventsFromParsedXML();
             callback(null, 0);
     }
+
 
 
         
@@ -313,11 +289,13 @@ module.exports.parseRawMusicXML = function (pathToFile) {
     }
 
 
+
         
         , function (callback) {
             getListOfDifferentInstrumentNames();
             callback(null, 2)
     }
+
 
         
         , function (callback) {
@@ -325,17 +303,20 @@ module.exports.parseRawMusicXML = function (pathToFile) {
             callback(null, 3)
     }
 
+
         
         , function (callback) {
             groupByInstrument();
             callback(null, 4)
     }
 
+
         
         , function (callback) {
             breakUpVoicesAndChords();
             callback(null, 4)
         }
+
         
         , function (callback) {
             addNotations();
@@ -359,7 +340,7 @@ module.exports.parseRawMusicXML = function (pathToFile) {
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Wed Jul 27 2016 20:37:55 GMT+1000 (AEST)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Wed Jul 27 2016 20:53:08 GMT+1000 (AEST)
 </footer>
 
 <script> prettyPrint(); </script>

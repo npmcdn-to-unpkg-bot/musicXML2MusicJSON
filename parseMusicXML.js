@@ -1,16 +1,12 @@
-//vendor libraries
 var fs = require('fs');
 var xml2js = require('xml2js');
 var parser = new xml2js.Parser();
 var lodash = require('lodash');
 var async = require('async');
-// my libraries
 var parseMusicXMLUtilities = require('./parseMusicXMLUtilities')
-    // const
 var NOTES_IN_OCTAVE = 12
 var MIDI_NUMBER_WHEN_REST = -1
 var OFFSET_FOR_OCTAVE_ZERO = 1
-    // object var
 var parsedXML;
 var allNotes;
 var arrayToHoldParts = []
@@ -22,15 +18,12 @@ var arrayToHoldInstrumentNames = [];
 var arrayToHoldVoiceNames = [];
 var arrayToHoldSingleInstrument = [];
 var arrayToHoldEachInstrumentSeperately = [];
-// startValue var
 var timeLineCounter = 0;
 var currentMeasureCounter = 0;
 var currentInstrument = -1;
 var currentDuration = 0;
 var arrayToHoldTieStarts = [];
 var arrayToHoldTieEnds = [];
-
-
 /**
  * <p>Processes raw html and will take any MusicXML file</p>
  * <p>Testing completed from MusicXML from Sibelius and Musescore</p>
@@ -45,7 +38,6 @@ function extractNoteEventsFromParsedXML() {
             for (var k = 0; k < arrayToHoldParts[i][j].note.length; k++) {
                 noteStorer = {};
                 noteStorer.measure = arrayToHoldParts[i][j]["$"]["number"]
-                    //console.log(JSON.stringify(noteStorer.measure))
                 noteStorer.duration = arrayToHoldParts[i][j].note[k].duration[0]
                 noteStorer.pitch = arrayToHoldParts[i][j].note[k].pitch
                 noteStorer.rest = arrayToHoldParts[i][j].note[k].rest
@@ -53,7 +45,6 @@ function extractNoteEventsFromParsedXML() {
                 noteStorer.voice = arrayToHoldParts[i][j].note[k].voice
                 try {
                     noteStorer.notations = arrayToHoldParts[i][j].note[k].notations
-                        //console.log(JSON.stringify(noteStorer.tie));
                 }
                 catch (err) {
                     noteStorer.notations = 'false'
@@ -67,7 +58,6 @@ function extractNoteEventsFromParsedXML() {
         }
     }
 }
-
 /**
  * Represents something there.
  * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
@@ -98,11 +88,9 @@ function cleanNoteEvents() {
         cleanedNoteStorer.instrument = parseMusicXMLUtilities.cleanInstrumentToString(arrayToHoldNotes[i].instrument);
         cleanedNoteStorer.currentVoice = parseInt(currentVoice[0]);
         cleanedNoteStorer.notations = arrayToHoldNotes[i].notations;
-        //console.log(cleanedNoteStorer.tie)
         arrayToHoldCleanedNotes.push(cleanedNoteStorer);
     }
 }
-
 /**
  * Represents something there.
  * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
@@ -118,7 +106,6 @@ function getListOfDifferentVoices() {
     }
     //console.log(arrayToHoldVoiceNames)
 }
-
 /**
  * Represents something there.
  * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
@@ -133,8 +120,6 @@ function getListOfDifferentInstrumentNames() {
         }
     }
 }
-
-
 /**
  * Represents something there.
  * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
@@ -153,8 +138,6 @@ function groupByInstrument() {
         arrayToHoldSingleInstrument = [];
     }
 }
-
-
 /**
  * Represents something there.
  * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
@@ -181,13 +164,13 @@ function breakUpVoicesAndChords() {
                         arrayToHoldEachInstrumentSeperately[j][k].location = timeLineCounter - currentDuration;
                         //console.log(JSON.stringify(arrayToHoldEachInstrumentSeperately[j][k]))
                     }
+                    arrayToHoldEachInstrumentSeperately[j][k].durationWithNotations = arrayToHoldEachInstrumentSeperately[j][k].duration;
                 }
             }
         }
         //console.log(JSON.stringify(arrayToHoldEachInstrumentSeperately, null, 5));
     }
 }
-
 /**
  * Represents something there.
  * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
@@ -199,24 +182,22 @@ function addNotations() {
     for (var i = 0; i < arrayToHoldEachInstrumentSeperately.length; i++) {
         for (var j = 0; j < arrayToHoldEachInstrumentSeperately[i].length; j++) {
             if (arrayToHoldEachInstrumentSeperately[i][j].notations) {
-                console.log(JSON.stringify(arrayToHoldEachInstrumentSeperately[i][j].notations, null, 2));
                 if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].tied) {
                     for (k = 0; k < arrayToHoldEachInstrumentSeperately[i][j].notations[0].tied.length; k++) {
                         var tieType = arrayToHoldEachInstrumentSeperately[i][j].notations[0].tied[k].$.type
                         if (tieType == 'start') {
-                            //console.log('START', tieType)
                             arrayToHoldTieStarts.push(arrayToHoldEachInstrumentSeperately[i][j])
                         }
                         else {
-                            //console.log('END', tieType)
                             var x = arrayToHoldTieStarts.pop();
-                            //console.log('Start position', x)
-                            //console.log('END posigion', arrayToHoldEachInstrumentSeperately[i][j] )
+                            var index = lodash.indexOf(arrayToHoldEachInstrumentSeperately[i], lodash.find(arrayToHoldEachInstrumentSeperately[i], x));
+                       
+                            console.log(index);
+                            console.log('Start position', arrayToHoldEachInstrumentSeperately[i][index])
+                            console.log('END posigion', arrayToHoldEachInstrumentSeperately[i][j] )
                             arrayToHoldTieEnds.push(arrayToHoldEachInstrumentSeperately[i][j])
                         }
                     }
-                    //console.log(JSON.stringify(arrayToHoldTieEnds, null, 2));
-                    //console.log(arrayToHoldEachInstrumentSeperately[i][j].notations[0].tied.length)
                     var tieNotation = arrayToHoldEachInstrumentSeperately[i][j].notations[0].tied[0].$;
                 }
                 else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].fermata) {
@@ -231,11 +212,9 @@ function addNotations() {
                 else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].glissando) {
                     console.log("HEREERERE")
                 }
-                
                 else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].ornaments) {
                     console.log("HEREERERE")
                 }
-      
                 else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].slide) {
                     console.log("HEREERERE")
                 }
@@ -255,7 +234,8 @@ function addNotations() {
         }
     }
 }
-// ASYNC
+
+
 
 
 module.exports.parseRawMusicXML = function (pathToFile) {
@@ -267,47 +247,32 @@ module.exports.parseRawMusicXML = function (pathToFile) {
                     callback(null);
                 });
             });
-    }
-
-
-
-        
+    }   
         , function (callback) {
             extractNoteEventsFromParsedXML();
             callback(null, 0);
     }
-
-
-        
         , function (callback) {
             cleanNoteEvents();
             callback(null, 1)
-    }
-
-
-        
+    }   
         , function (callback) {
             getListOfDifferentInstrumentNames();
             callback(null, 2)
     }
-
-        
         , function (callback) {
             getListOfDifferentVoices();
             callback(null, 3)
     }
-
-        
         , function (callback) {
             groupByInstrument();
             callback(null, 4)
     }
-
-        
         , function (callback) {
             breakUpVoicesAndChords();
             callback(null, 4)
         }
+
         
         , function (callback) {
             addNotations();
