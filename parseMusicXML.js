@@ -11,6 +11,7 @@ var NOTES_IN_OCTAVE = 12
 var MIDI_NUMBER_WHEN_REST = -1
 var OFFSET_FOR_OCTAVE_ZERO = 1
     // object var
+
 var parsedXML;
 var allNotes;
 var arrayToHoldParts = []
@@ -27,7 +28,6 @@ var timeLineCounter = 0;
 var currentMeasureCounter = 0;
 var currentInstrument = -1;
 var currentDuration = 0;
-
 var arrayToHoldTieStarts = [];
 var arrayToHoldTieEnds = [];
 
@@ -41,7 +41,7 @@ function extractNoteEventsFromParsedXML() {
             for (var k = 0; k < arrayToHoldParts[i][j].note.length; k++) {
                 noteStorer = {};
                 noteStorer.measure = arrayToHoldParts[i][j]["$"]["number"]
-                //console.log(JSON.stringify(noteStorer.measure))
+                    //console.log(JSON.stringify(noteStorer.measure))
                 noteStorer.duration = arrayToHoldParts[i][j].note[k].duration[0]
                 noteStorer.pitch = arrayToHoldParts[i][j].note[k].pitch
                 noteStorer.rest = arrayToHoldParts[i][j].note[k].rest
@@ -49,11 +49,10 @@ function extractNoteEventsFromParsedXML() {
                 noteStorer.voice = arrayToHoldParts[i][j].note[k].voice
                 try {
                     noteStorer.notations = arrayToHoldParts[i][j].note[k].notations
-                    //console.log(JSON.stringify(noteStorer.tie));
+                        //console.log(JSON.stringify(noteStorer.tie));
                 }
                 catch (err) {
-                    
-                   noteStorer.notations = 'false'
+                    noteStorer.notations = 'false'
                 }
                 noteStorer.instrument = arrayToHoldParts[i][j].note[k].instrument
                 noteStorer.staff = arrayToHoldParts[i][j].note[k].staff
@@ -149,40 +148,68 @@ function breakUpVoicesAndChords() {
 }
 
 
+//From notations MusicXML spec at http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
+
+
 function addNotations() {
-
-    
-    for (var i = 0; i < arrayToHoldEachInstrumentSeperately.length; i ++) {
-
+    for (var i = 0; i < arrayToHoldEachInstrumentSeperately.length; i++) {
         for (var j = 0; j < arrayToHoldEachInstrumentSeperately[i].length; j++) {
-           
             if (arrayToHoldEachInstrumentSeperately[i][j].notations) {
-              // console.log(JSON.stringify(arrayToHoldEachInstrumentSeperately[i][j], null, 2));
+                console.log(JSON.stringify(arrayToHoldEachInstrumentSeperately[i][j].notations, null, 2));
                 if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].tied) {
-                    
-                    for (k = 0; k < arrayToHoldEachInstrumentSeperately[i][j].notations[0].tied.length; k ++ ) {
-                        
+                    for (k = 0; k < arrayToHoldEachInstrumentSeperately[i][j].notations[0].tied.length; k++) {
                         var tieType = arrayToHoldEachInstrumentSeperately[i][j].notations[0].tied[k].$.type
-                       
                         if (tieType == 'start') {
                             //console.log('START', tieType)
                             arrayToHoldTieStarts.push(arrayToHoldEachInstrumentSeperately[i][j])
-                            
-                        } else {
+                        }
+                        else {
                             //console.log('END', tieType)
                             var x = arrayToHoldTieStarts.pop();
-                            console.log('Start position', x)
-                            console.log('END posigion', arrayToHoldEachInstrumentSeperately[i][j] )
+                            //console.log('Start position', x)
+                            //console.log('END posigion', arrayToHoldEachInstrumentSeperately[i][j] )
                             arrayToHoldTieEnds.push(arrayToHoldEachInstrumentSeperately[i][j])
-                            
                         }
-                        
                     }
-                    
                     //console.log(JSON.stringify(arrayToHoldTieEnds, null, 2));
-                    
-                     //console.log(arrayToHoldEachInstrumentSeperately[i][j].notations[0].tied.length)
-                     var tieNotation = arrayToHoldEachInstrumentSeperately[i][j].notations[0].tied[0].$;
+                    //console.log(arrayToHoldEachInstrumentSeperately[i][j].notations[0].tied.length)
+                    var tieNotation = arrayToHoldEachInstrumentSeperately[i][j].notations[0].tied[0].$;
+                }
+                else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].fermata) {
+                    console.log("HEREERERE")
+                }
+                else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].arpeggiate) {
+                    console.log("HEREERERE")
+                }
+                else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].dynamics) {
+                    console.log("HEREERERE")
+                }
+                else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].glissando) {
+                    console.log("HEREERERE")
+                }
+                else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].non-apeggiate) {
+                    console.log("HEREERERE")
+                }
+                else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].ornaments) {
+                    console.log("HEREERERE")
+                }
+                else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].other-notation) {
+                    console.log("HEREERERE")
+                }
+                else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].slide) {
+                    console.log("HEREERERE")
+                }
+                else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].slur) {
+                    console.log("HEREERERE")
+                }
+                else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].technical) {
+                    console.log("HEREERERE")
+                }
+                else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].tied) {
+                    console.log("HEREERERE")
+                }
+                else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].tuplet) {
+                    console.log("HEREERERE")
                 }
             }
         }
@@ -201,36 +228,40 @@ module.exports.parseRawMusicXML = function (pathToFile) {
     }
 
 
+        
         , function (callback) {
             extractNoteEventsFromParsedXML();
             callback(null, 0);
     }
 
-
+        
         , function (callback) {
             cleanNoteEvents();
             callback(null, 1)
     }
 
-
+        
         , function (callback) {
             getListOfDifferentInstrumentNames();
             callback(null, 2)
-    }       
+    }
+        
         , function (callback) {
             getListOfDifferentVoices();
             callback(null, 3)
     }
+        
         , function (callback) {
             groupByInstrument();
             callback(null, 4)
-    }    
+    }
+        
         , function (callback) {
             breakUpVoicesAndChords();
             callback(null, 4)
-        },
-        function (callback) {
-          addNotations();
+        }
+        , function (callback) {
+            addNotations();
             callback(null, 4);
         },
 
