@@ -38,8 +38,13 @@
 <p>Duration has been encoded with two attributes, duration, and durationWithNotations. The durationWithNotations is the important one as it will include any tied note information </p>
 <h3>Location</h3>
 <p>Location is encoded with two attributes, a measure int and location in the bar as denominator.</p>
+
+<h2>Other encoding</h2>
 <h3>Markings</h3>
-<p>Markings is an array including any note event. For most of the work I do this works well, but it is easy to modify the code to change this if needed. I have worked through the MusicXML spec. There are probably faster ways to do this, but its here being used as a preprocessor</p>
-<h3>Tests</h3>
-<p>The tests folder contains the usual tests you would expect. I have also included a visualisation test using D3.js</p>
+<p>Markings is an array of string values including any additional information besides frequency, location and duration. This works well for me, but it is easy to modify the code to change this if needed. I have worked through the MusicXML spec. There are probably faster ways to do this, but its here being used as a preprocessor</p>
+
+<h2>Testing</h2>
+<p>The tests folder contains  what you would expect. I have also included some visualisation tests D3.js and Express</p>
+
 <h3>Usage</h3>
+<p>Logging is optional and handy to turn on if run into any issues during parsing. You can pass a flag to return basic stats. You can also pass the module a metadata object, a group of key value pairs which will also be included in the note and rest events </p>
