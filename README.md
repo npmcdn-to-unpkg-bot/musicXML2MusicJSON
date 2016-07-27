@@ -6,7 +6,8 @@
 <div>Sample output:</div>
 
 
-JSON.stringify({[
+```javascript
+{[
 { 
   midiNumber: 56,
   isHarmony: false,
@@ -29,4 +30,5 @@ JSON.stringify({[
   location: 0,
   durationWithNotations: 512
 }
-]}, null, 4)
+]}
+```
