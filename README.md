@@ -1,10 +1,12 @@
 <h2>MusicXML2Json Node Module</h2>
 
-<div>The purpose of this module is to convert MusicXML files to timestamped JSON. I have tested this. </div>
+<div>The purpose of this module is to convert MusicXML files to timestamped JSON.</div>
 
-<code>
 
-[
+<div>Sample output:</div>
+
+
+JSON.stringify({[
 { 
   midiNumber: 56,
   isHarmony: false,
@@ -27,6 +29,4 @@
   location: 0,
   durationWithNotations: 512
 }
-]
-
-</code>
+]}, null, 4)
