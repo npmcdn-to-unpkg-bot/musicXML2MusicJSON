@@ -11,7 +11,6 @@ var NOTES_IN_OCTAVE = 12
 var MIDI_NUMBER_WHEN_REST = -1
 var OFFSET_FOR_OCTAVE_ZERO = 1
     // object var
-
 var parsedXML;
 var allNotes;
 var arrayToHoldParts = []
@@ -31,6 +30,11 @@ var currentDuration = 0;
 var arrayToHoldTieStarts = [];
 var arrayToHoldTieEnds = [];
 
+
+/**
+ * <p>Processes raw html and will take any MusicXML file</p>
+ * <p>Testing completed from MusicXML from Sibelius and Musescore</p>
+ */
 function extractNoteEventsFromParsedXML() {
     allNotes = parsedXML['score-partwise']['part'];
     lodash.forEach(allNotes, function (value, key) {
@@ -64,6 +68,13 @@ function extractNoteEventsFromParsedXML() {
     }
 }
 
+/**
+ * Represents something there.
+ * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
+ * @constructor
+ * @param {string} title - The title of the book.
+ * @param {string} author - The author of the book.
+ */
 function cleanNoteEvents() {
     for (var i = 0; i < arrayToHoldNotes.length; i++) {
         cleanedNoteStorer = {}
@@ -92,6 +103,13 @@ function cleanNoteEvents() {
     }
 }
 
+/**
+ * Represents something there.
+ * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
+ * @constructor
+ * @param {string} title - The title of the book.
+ * @param {string} author - The author of the book.
+ */
 function getListOfDifferentVoices() {
     for (var i = 0; i < arrayToHoldCleanedNotes.length; i++) {
         if (!lodash.includes(arrayToHoldVoiceNames, arrayToHoldCleanedNotes[i].currentVoice)) {
@@ -101,6 +119,13 @@ function getListOfDifferentVoices() {
     //console.log(arrayToHoldVoiceNames)
 }
 
+/**
+ * Represents something there.
+ * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
+ * @constructor
+ * @param {string} title - The title of the book.
+ * @param {string} author - The author of the book.
+ */
 function getListOfDifferentInstrumentNames() {
     for (var i = 0; i < arrayToHoldCleanedNotes.length; i++) {
         if (!lodash.includes(arrayToHoldInstrumentNames, arrayToHoldCleanedNotes[i].instrument)) {
@@ -109,6 +134,14 @@ function getListOfDifferentInstrumentNames() {
     }
 }
 
+
+/**
+ * Represents something there.
+ * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
+ * @constructor
+ * @param {string} title - The title of the book.
+ * @param {string} author - The author of the book.
+ */
 function groupByInstrument() {
     for (var i = 0; i < arrayToHoldInstrumentNames.length; i++) {
         for (var j = 0; j < arrayToHoldCleanedNotes.length; j++) {
@@ -121,6 +154,14 @@ function groupByInstrument() {
     }
 }
 
+
+/**
+ * Represents something there.
+ * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
+ * @constructor
+ * @param {string} title - The title of the book.
+ * @param {string} author - The author of the book.
+ */
 function breakUpVoicesAndChords() {
     for (var i = 0; i < arrayToHoldVoiceNames.length; i++) {
         for (var j = 0; j < arrayToHoldEachInstrumentSeperately.length; j++) {
@@ -147,10 +188,13 @@ function breakUpVoicesAndChords() {
     }
 }
 
-
-//From notations MusicXML spec at http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
-
-
+/**
+ * Represents something there.
+ * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
+ * @constructor
+ * @param {string} title - The title of the book.
+ * @param {string} author - The author of the book.
+ */
 function addNotations() {
     for (var i = 0; i < arrayToHoldEachInstrumentSeperately.length; i++) {
         for (var j = 0; j < arrayToHoldEachInstrumentSeperately[i].length; j++) {
@@ -187,15 +231,11 @@ function addNotations() {
                 else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].glissando) {
                     console.log("HEREERERE")
                 }
-                else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].non-apeggiate) {
-                    console.log("HEREERERE")
-                }
+                
                 else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].ornaments) {
                     console.log("HEREERERE")
                 }
-                else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].other-notation) {
-                    console.log("HEREERERE")
-                }
+      
                 else if (arrayToHoldEachInstrumentSeperately[i][j].notations[0].slide) {
                     console.log("HEREERERE")
                 }
@@ -216,6 +256,8 @@ function addNotations() {
     }
 }
 // ASYNC
+
+
 module.exports.parseRawMusicXML = function (pathToFile) {
     async.series([
     function (callback) {
@@ -228,11 +270,13 @@ module.exports.parseRawMusicXML = function (pathToFile) {
     }
 
 
+
         
         , function (callback) {
             extractNoteEventsFromParsedXML();
             callback(null, 0);
     }
+
 
         
         , function (callback) {
@@ -240,26 +284,31 @@ module.exports.parseRawMusicXML = function (pathToFile) {
             callback(null, 1)
     }
 
+
         
         , function (callback) {
             getListOfDifferentInstrumentNames();
             callback(null, 2)
     }
+
         
         , function (callback) {
             getListOfDifferentVoices();
             callback(null, 3)
     }
+
         
         , function (callback) {
             groupByInstrument();
             callback(null, 4)
     }
+
         
         , function (callback) {
             breakUpVoicesAndChords();
             callback(null, 4)
         }
+        
         , function (callback) {
             addNotations();
             callback(null, 4);
