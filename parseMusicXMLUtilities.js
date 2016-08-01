@@ -1,5 +1,4 @@
-var NOTES_IN_OCTAVE = 12
-var OFFSET_FOR_OCTAVE_ZERO = 1
+var constants = require('./constants');
 
 module.exports.convertLetterToBasePitch = function (letter) {
     if (letter === 'C') {
@@ -31,7 +30,7 @@ module.exports.cleanInstrumentToString = function (instrument) {
 
 module.exports.convertPitchInformationToMidiNumber = function (pitchInfo) {
     var step = module.exports.convertLetterToBasePitch(pitchInfo[0].step[0]);
-    var octave = parseInt(pitchInfo[0].octave) + OFFSET_FOR_OCTAVE_ZERO;
+    var octave = parseInt(pitchInfo[0].octave) + constants.OFFSET_FOR_OCTAVE_ZERO;
     var alter = pitchInfo[0].alter;
     if (pitchInfo[0].alter == null) {
         alter = 0
@@ -39,6 +38,6 @@ module.exports.convertPitchInformationToMidiNumber = function (pitchInfo) {
     else {
         alter = parseInt(pitchInfo[0].alter[0]);
     }
-    var midiNumber = (octave * NOTES_IN_OCTAVE) + step + alter
+    var midiNumber = (octave * constants.NOTES_IN_OCTAVE) + step + alter
     return midiNumber;
 }
