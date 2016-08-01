@@ -31,4 +31,6 @@ module.exports.getListOfDifferentVoices = function (rawMusicXML) {
             arrayToHoldVoiceNames.push(arrayToHoldCleanedNotes[i].currentVoice);
         }
     }
+    
+    return arrayToHoldVoiceNames;
 }

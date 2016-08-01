@@ -1,6 +1,6 @@
 var lodash = require('lodash')
-var parseMusicXMLUtilities = require('./parseMusicXMLUtilities');
-var constants = require('./constants')
+var parseMusicXMLUtilities = require('.././parseMusicXMLUtilities');
+var constants = require('.././constants')
     /**
      * <p>Processes raw html and will take any MusicXML file</p>
      * <p>Testing completed from MusicXML from Sibelius and Musescore</p>
@@ -44,6 +44,7 @@ module.exports.extractNoteEventsFromParsedXML = function (parsedMusicXML) {
             }
         }
     }
+    console.log(JSON.stringify(arrayToHoldNotes, null, 2));
     return arrayToHoldNotes;
 }
 
@@ -63,6 +64,8 @@ module.exports.cleanMusicXML = function (arrayToHoldNotes) {
         else {
             cleanedNoteStorer.midiNumber = constants.MIDI_NUMBER_WHEN_REST;
         }
+        
+        
         if (arrayToHoldNotes[i].chord) {
             cleanedNoteStorer.isHarmony = true;
         }
