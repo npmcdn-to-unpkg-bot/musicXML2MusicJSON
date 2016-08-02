@@ -1,0 +1,14 @@
+.title {
+    position: fixed;
+    height: 100px;
+    margin-left: 350px;
+    
+}
+
+.canvas {
+    margin-top: 100px;
+}
+
+body {
+    background-color: lightgray;
+}
