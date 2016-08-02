@@ -1,0 +1,19 @@
+{
+  "name": "data-visualisation",
+  "description": "",
+  "main": "config.js",
+  "license": "ISC",
+  "homepage": "https://github.com/jgab3103/musicXML2Json",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "data-visualisations/assets/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "^4.2.0",
+    "bootstrap": "^3.3.7"
+  }
+}
