@@ -33,7 +33,12 @@
 ]}
 ```
 
-<img src="img.png" width="350"/>
+
+
+<p align="center">
+  <img src="img.png" width="750"/>
+ 
+</p>
 
 <h2>Time encoding</h2>
 <h3>Duration</h3>
