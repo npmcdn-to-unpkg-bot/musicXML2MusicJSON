@@ -62,7 +62,7 @@ node convertMusicXMLToJSON.js -f "pathToYouMusicXMLFile.xml"
 <br>
 
 ```javascript
-node visualizeData.js
+node convertMusicXMLToJSON.js -f "pathToYouMusicXMLFile.xml"
 ```
 <br>
 <div> Runing the visualization command above will make the visualization available from localhost:8080 and will look something like figure 1. </div>
