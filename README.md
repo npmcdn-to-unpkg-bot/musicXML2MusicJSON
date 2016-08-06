@@ -56,24 +56,24 @@ node convertMusicXMLToJSON(path-to-your-MusicXML-file)
  
 </p>
 
-<h2>MusicJSON Attributes</h2>
+<h3>Explanation of attributes</h3>
 
 <h3>Instrument</h3>
 <div>
-   Instrument name.
+   Instrument name
 </div>
 <h5>Voice</h5>
 <div>
-   Voice number within MusicXML part.
+   Voice number within MusicXML part
 </div>
 
 <h5>Midi number</h5>
 <div>
-   Number between 0 and 127 where 60 = Middle C = C4. 
+   Number between 0 and 127 where 60 = Middle C = C4 
 </div>
 <h5>Duration</h5>
 <div>
-   Lengh of a note or rest, where quarter note = 256.
+   Lengh of a note or rest, where quarter note = 256
 </div>
 
 <h5>Duration due to tied notes</h5>
