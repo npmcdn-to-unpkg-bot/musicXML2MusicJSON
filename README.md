@@ -4,7 +4,7 @@
 <br>
 <div>MusicJSON sets out to solve this conundrum!</div>
 
-<li><a href="#sampleOutput">Sample output</a></li>
+<a href="#sampleOutput">Sample output</a>
 
 <a name="sampleOutput"></a>
 <h3>Sample output</h3>
