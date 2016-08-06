@@ -42,7 +42,7 @@
 
 <h2>MusicJSON Attributes</h2>
 
-<h4>Instrument</h4>
+<h3>Instrument</h3>
 <div>
    Instrument name.
 </div>
