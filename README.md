@@ -1,9 +1,9 @@
 <h2>MusicXML2JSON</h2>
 
-<div>The purpose of this Node module is to convert a MusicXML file into a to a timestamped JSON file.</div>
+<div>The purpose of this Node module is to convert a MusicXML file into a to a timestamped JSON file, to make it more suited to time-series type analysis and creating visualizations on the web.</div>
 
 
-<h3>Sample output:</h3>
+<h3>Sample output</h3>
 
 
 ```javascript
@@ -42,6 +42,12 @@
 ```
 
 
+<h3>Usage</h3>
+<div>`Node convertMusicXMLToJSON(path-to-your-MusicXML-file)`</div>
+
+
+<h3>Tests</h3>
+<div>The simplest way to test this seems to be with a pianoroll visualization so I have included this along the with the usual testing you would expect. Running the node </div>
 
 <p align="center">
   <img src="data-visualisation/visualization.png" width="100%"/>
