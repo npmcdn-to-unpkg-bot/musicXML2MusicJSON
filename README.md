@@ -7,30 +7,38 @@
 
 
 ```javascript
-{[
-{ 
-  midiNumber: 56,
-  isHarmony: false,
-  measure: '31',
-  duration: 768,
-  instrument: 'P3-I1',
-  currentVoice: 1,
-  notations: [ { tied: [Object] } ],
-  location: 0,
-  durationWithNotations: 768 
-},
-  { 
-  midiNumber: 56,
-  isHarmony: false,
-  measure: '32',
-  duration: 512,
-  instrument: 'P3-I1',
-  currentVoice: 1,
-  notations: [ { tied: [Object] } ],
-  location: 0,
-  durationWithNotations: 512
-}
-]}
+    {
+      "midiNumber": 43,
+      "isHarmony": false,
+      "measure": 170,
+      "duration": 256,
+      "instrument": "P4-I1",
+      "currentVoice": 1,
+      "location": 768,
+      "durationWithNotations": 256,
+      "beats": 4,
+      "beatType": 4,
+      "absLocation": 160768,
+      "measureLocationInQuarterNotes": 160000,
+      "timeStamp": "1685-03-20T13:10:28.000Z",
+      "qbpm": 60
+    },
+    {
+      "midiNumber": 36,
+      "isHarmony": false,
+      "measure": 171,
+      "duration": 256,
+      "instrument": "P4-I1",
+      "currentVoice": 1,
+      "location": 0,
+      "durationWithNotations": 256,
+      "beats": 4,
+      "beatType": 4,
+      "absLocation": 161024,
+      "measureLocationInQuarterNotes": 161024,
+      "timeStamp": "1685-03-20T13:10:29.000Z",
+      "qbpm": 60
+    },
 ```
 
 
