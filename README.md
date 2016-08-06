@@ -4,7 +4,7 @@
 <br>
 <div><a href="#sample">Sample output</a></div>
 <div><a href="#usage">Usage</a></div>
-<div><a href="#testing">Testing</a></div>
+<div><a href="#testing">Docs and Testing</a></div>
 <div><a href="#attributes">Attributes description</a></div>
 <div><a href="#issues">Issues and future work</a></div>
 
@@ -56,7 +56,8 @@ node convertMusicXMLToJSON.js -f "pathToYouMusicXMLFile.xml"
 ```
 
 <a name="testing"></a>
-<h3>Testing</h3>
+<h3>Docs and Testing</h3>
+<div>JSDocs for all the MusicXML2MusicJSON code can be found int he <i>out</i> folder, generated with JSDocs</div>
 <div>The most convenient way I have found to test this data is using a pianoroll visualization, so I have included this along the with the usual testing you would expect. This a tiny node/express app, and will look for data where the musicJSON file will be placed. </div>
 <br>
 
