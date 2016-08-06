@@ -49,7 +49,7 @@
 
 <a name="usage"></a>
 <h3>Usage</h3>
-<div>Run the MusicXML2JSON module with the followng command. It will output a data.json file into the <i>./data</i> folder </div>
+<div>Run the MusicXML2MusicJSON module with the followng command. It will output a data.json file into the <i>./data</i> folder </div>
 <br>
 ```javascript
 node convertMusicXMLToJSON.js -m "pathToYouMusicXMLFile.xml"
@@ -145,7 +145,7 @@ node visualizeData.js
 <div>I have focused on the parts of a MusicXML specification that I need for a particular research project that centers around time, frequency, and location type information. I am also implementing it as a use it as a back end parser for my music search and analysis software at <a href="http://stelupa.com">stelupa.com</a>.</div>
 <br>
 <div>
-A couple of ommissions to be fixed as soon as possible - encoding of global metadata is needed(things such as composed year etc), some more tests needed and also need to fix some tied note issues. There are also notations, attributes and directions (things like slurs, mordents, directions etc) and I will bring those over too.  If there is anything you want added let me know, or send a pull request
+A couple of ommissions to be fixed as soon as possible - encoding of global metadata is needed(things such as composed year etc), some more tests needed and also need to fix some tied note issues. There are also notations, attributes and directions (things like slurs, mordents, directions etc) and I will bring those over too. Also, I am using Sibelius and MuseScore to generate the MusicXML and I don't know if this will play nicely with MusicXML files generated in other ways. I will get to the bottom of that soon. If there is anything you want added let me know, or send a pull request
 </div>
 <br>
 <div>Jamie Gabriel</div>
