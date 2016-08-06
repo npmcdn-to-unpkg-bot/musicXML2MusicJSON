@@ -46,7 +46,7 @@
 <div>Run the MusicXML2JSON module with the followng command. It will output a data.json file into the ./data folder </div>
 <br>
 ```javascript
-node convertMusicXMLToJSON("pathToYouMusicXMLFile.xml")
+node convertMusicXMLToJSON.js -m "pathToYouMusicXMLFile.xml"
 ```
 
 
@@ -55,7 +55,7 @@ node convertMusicXMLToJSON("pathToYouMusicXMLFile.xml")
 <br>
 
 ```javascript
-node visualizeData()
+node visualizeData.js
 ```
 <br>
 <div> Runing the visualization command above will make the visualization available from localhost:8080 and will look like figure 1. </div>
