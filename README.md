@@ -49,8 +49,8 @@ node convertMusicXMLToJSON(path-to-your-MusicXML-file)
 
 
 <h3>Tests</h3>
-<div>The simplest way to test this seems to be with a pianoroll visualization so I have included this along the with the usual testing you would expect. Running the node </div>
-
+<div>The simplest way to test this seems to be with a pianoroll visualization so I have included this along the with the usual testing you would expect. Running the above command will output a rawData.json file in ./data-visualiztion/visualisation/data folder which is the output file. If you run the data visualisation it will look here.</div>
+<br>
 <p align="center">
   <img src="data-visualisation/visualization.png" width="100%"/>
  
