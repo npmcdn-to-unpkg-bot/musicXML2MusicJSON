@@ -36,7 +36,7 @@
 
 
 <p align="center">
-  <img src="data-visualisation/img.png" width="750"/>
+  <img src="data-visualisation/visualization.png" width="750"/>
  
 </p>
 
