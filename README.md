@@ -57,12 +57,12 @@ node convertMusicXMLToJSON.js -f "pathToYouMusicXMLFile.xml"
 
 <a name="testing"></a>
 <h3>Docs and Testing</h3>
-<div>JSDocs for all the MusicXML2MusicJSON code can be found int he <i>out</i> folder, generated with <a href="http://usejsdoc.org/">JSDocs.</a></div><br>
+<div>JSDocs for all the MusicXML2MusicJSON code can be found int he <i>out</i> folder, generated with JSDocs.</div><br>
 <div>The most convenient way I have found to test this data is using a pianoroll visualization, so I have included this along the with the usual testing you would expect. This a tiny node/express app, and will look for data where the musicJSON file will be placed. </div>
 <br>
 
 ```javascript
-node convertMusicXMLToJSON.js -f "pathToYouMusicXMLFile.xml"
+node visualizeData.js
 ```
 <br>
 <div> Runing the visualization command above will make the visualization available from localhost:8080 and will look something like figure 1. </div>
