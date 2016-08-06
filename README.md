@@ -1,6 +1,6 @@
 <h2>MusicXML2JSON</h2>
 
-<div>The purpose of this Node module is to convert MusicXML files into a timestamped JSON files, to make this data more suited to time-series analysis and creating web based visualizations</div>
+<div>The purpose of this Node module is to convert MusicXML files into a timestamped JSON files, to make this type of data more suited to time-series analysis and data visualizations. One of the drawbacks of MusicXML is that it does not explicitly encode time information (in the sense that any particular note or rest can be interrogated for its temporal position). MusicJSON sets out to solve this.</div>
 
 
 <h3>Sample output</h3>
@@ -126,4 +126,7 @@ node convertMusicXMLToJSON("pathToYouMusicXMLFile.xml")
 
 
 <h3>Future work</h3>
-<div>I have focused on th parts of a MusicXML spec that I need for a certain research project which centers around time, frequency, location type information. Its straightfoward but will probable pick up more of the spec. If there is anything you want added let me know, or send a pull request.  </div>
+<div>I have focused on the parts of a MusicXML specification that I need for a particular research project that centers around time, frequency, and location type information. If there is anything you want added let me know, or send a pull request.   </div>
+<div>
+One this missing is the encoding of global metadata (things such as composed year etc). Will include that as soon as possible.  
+</div>
