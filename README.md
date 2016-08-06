@@ -4,9 +4,9 @@
 <br>
 <div>MusicJSON sets out to solve this conundrum!</div>
 
-<div>asdfas(#sample)</div>
+<li><a href="#sampleOutput">Sample output</a></li>
 
-
+<a name="sampleOutput"></a>
 <h3>Sample output</h3>
 
 
