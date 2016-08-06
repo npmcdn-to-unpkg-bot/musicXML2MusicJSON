@@ -75,11 +75,11 @@ node visualizeData.js
 <a name="attributes"></a>
 <h3>Attributes description</h3>
 
-<h2>Instrument</h2>
+<h4>Instrument</h4>
 <div>
    Instrument name
 </div>
-<h5>Voice</h5>
+<h4>Voice</h4>
 <div>
    Voice number within MusicXML part
 </div>
