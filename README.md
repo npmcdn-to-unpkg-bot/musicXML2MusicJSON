@@ -125,21 +125,5 @@ node convertMusicXMLToJSON("pathToYouMusicXMLFile.xml")
 </div>
 
 
-
-
-<h2>Timestamps</h2>
-<h3>Duration</h3>
-<p>I have kept the conventino of a quarter note equating to 256.  whole note equating to 1024, and bases all calculations around this. In order to keep all durations consisent, it encoded with two numbers, 1024 and a denominator number for division. For example, a quarter note is encoded as 4, being 1024 / 4 = 256. A quater note triplet is encoded as 6, being 1024 / 6. This avoids the irrational numbers and makes aggregation easier based on a quarter note divisions. The whole note has been kept at 1024 as per the musicXML specification. All durations are are a division of 1024, so a quarter note triplet is encoded as the rational number 1024/6</p>
-<p>Duration has been encoded with two attributes, duration, and durationWithNotations. The durationWithNotations is the important one as it will include any tied note information </p>
-<h3>Location</h3>
-<p>Location is encoded with two attributes, a measure int and location in the bar as denominator.</p>
-
-<h2>Other encoding</h2>
-<h3>Markings</h3>
-<p>Markings is an array of string values including any additional information besides frequency, location and duration. This works well for me, but it is easy to modify the code to change this if needed. I have worked through the MusicXML spec. There are probably faster ways to do this, but its here being used as a preprocessor</p>
-
-<h2>Testing</h2>
-<p>The tests folder contains  what you would expect. I have also included some visualisation tests D3.js and Express</p>
-
-<h3>Usage</h3>
-<p>Logging is optional and handy to turn on if run into any issues during parsing. You can pass a flag to return basic stats. You can also pass the module a metadata object, a group of key value pairs which will also be included in the note and rest events </p>
+<h3>Future work</h3>
+<div>I have focused on th parts of a MusicXML spec that I need for a certain research project which centers around time, frequency, location type information. Its straightfoward but will probable pick up more of the spec. If there is anything you want added let me know, or send a pull request.  </div>
