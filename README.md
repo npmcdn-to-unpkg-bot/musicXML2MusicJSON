@@ -59,7 +59,7 @@ node convertMusicXMLToJSON("pathToYouMusicXMLFile.xml")
 node visualizeData()
 ```
 <br>
-<div style="font-size: 11px">Figure 1.</div>
+<h6>Figure 1.</h6>
 <p align="center">
   <img src="data-visualisation/visualization.png" width="100%"/>
  
