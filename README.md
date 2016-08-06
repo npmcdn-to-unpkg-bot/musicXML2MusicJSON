@@ -150,6 +150,6 @@ A couple of ommissions to be fixed as soon as possible - encoding of global meta
 <br>
 <div>Jamie Gabriel</div>
 <div><a href="http://biodigitaljazz.org">biodigitaljazz.org</a></div>
-<div><a href="mailto: jgab3103@gmail.com">jgab3103@gmail.com</a></div>
+<div><a href="mailto:jgab3103@gmail.com">jgab3103@gmail.com</a></div>
 
 
