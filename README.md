@@ -1,6 +1,6 @@
 <h2>MusicXML2JSON</h2>
 
-<div>The purpose of this Node module is to convert MusicXML files into a timestamped JSON files, to make this type of data more suited to time-series analysis and data visualizations. One of the drawbacks of MusicXML is that it does not explicitly encode time information (in the sense that any particular note or rest can be interrogated for its temporal position). MusicJSON sets out to solve this.</div>
+<div>The purpose of this Node module is to convert MusicXML files into a timestamped JSON files, to make this type of data more suited to time-series analysis and data visualizations. One of the drawbacks of MusicXML is that it does not explicitly encode time information (in the sense that any particular note or rest can be interrogated for its temporal position). <br>MusicJSON sets out to solve this.</div>
 
 
 <h3>Sample output</h3>
