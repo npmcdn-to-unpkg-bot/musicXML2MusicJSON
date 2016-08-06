@@ -3,7 +3,7 @@
 <div>The purpose of this Node module is to convert a MusicXML file into a to a timestamped JSON file.</div>
 
 
-<div>Sample output:</div>
+<h3>Sample output:</h3>
 
 
 ```javascript
