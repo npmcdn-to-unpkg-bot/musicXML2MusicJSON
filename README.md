@@ -43,7 +43,7 @@
 
 
 <h3>Usage</h3>
-<div>`Node convertMusicXMLToJSON(path-to-your-MusicXML-file)`</div>
+`Node convertMusicXMLToJSON(path-to-your-MusicXML-file)`
 
 
 <h3>Tests</h3>
