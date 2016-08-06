@@ -75,7 +75,7 @@ node visualizeData.js
 <a name="attributes"></a>
 <h3>Attributes description</h3>
 
-<h3>Instrument</h3>
+<h2>Instrument</h2>
 <div>
    Instrument name
 </div>
