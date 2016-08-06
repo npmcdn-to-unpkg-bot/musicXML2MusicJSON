@@ -77,30 +77,30 @@ node visualizeData.js
 
 <h4>Instrument</h4>
 <div>
-   Instrument name
+   String with intrument name
 </div>
 <h4>Voice</h4>
 <div>
-   Voice number within MusicXML part
+   Integer as current voice number of note or rest
 </div>
 
 <h5>Midi number</h5>
 <div>
-   Number between 0 and 127 where 60 = Middle C = C4 
+   Integer between 0 and 127 where 60 = Middle C = C4 
 </div>
 <h5>Duration</h5>
 <div>
-   Lengh of a note or rest, where quarter note = 256
+   Integer indicating duraiotn of a note or rest, where a quarter note = 256
 </div>
 
 <h5>Duration due to tied notes</h5>
 <div>
-   Modifier of the Duration attribute, due to tied values. Notes that are tied to a next note will accumulate the duration of the next note. Notes that are tied to a prior note will have 0 value.
+   Modification of the <b>Duration</b> attribute as an integer value. Notes or rests that are tied to a next note will accumulate the duration of the next note. Notes that are tied to a prior note will have 0 value
 </div>
 
 <h5>Harmony note flag</h5>
 <div>
-   Boolean indicating note has been encoded as a MusicXML chord
+   Boolean value indicating note is part of a chord
 </div>
 <h5>Measure</h5>
 <div>
