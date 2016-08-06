@@ -147,8 +147,9 @@ node visualizeData.js
 <div>
 A couple of ommissions to be fixed as soon as possible - encoding of global metadata is needed(things such as composed year etc), some more tests needed and also need to fix some tied note issues. There are also notations, attributes and directions (things like slurs, mordents, directions etc) and I will bring those over too.  If there is anything you want added let me know, or send a pull request
 </div>
-
-
-
+<br>
+<div>Jamie Gabriel</div>
+<div><a href="http://biodigitaljazz.org">biodigitaljazz.org</a></div>
+<div><a href="mailto: jgab3103@gmail.com">jgab3103@gmail.com</a></div>
 
 
