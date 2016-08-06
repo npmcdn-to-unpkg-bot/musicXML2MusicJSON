@@ -43,14 +43,19 @@
 
 
 <h3>Usage</h3>
-<div>The following output a file to the .././data-visualization/visualisation/data folder </div>
+<div>Run the MusicXML2JSON module with the followng command. It will output a data.json file into the ./data folder </div>
 ```javascript
 node convertMusicXMLToJSON("pathToYouMusicXMLFile.xml")
 ```
 
 
 <h3>Tests</h3>
-<div>The simplest way to test this seems to be with a pianoroll visualization so I have included this along the with the usual testing you would expect. Running the above command will output a rawData.json file in ./data-visualization/visualisation/data folder which is the output file. If you run the data visualisation it will look here.</div>
+<div>The most convenient way I have found to test this data is using a pianoroll visualization, so I have included this along the with the usual testing you would expect. The visualization will look in the output folder which is the output file where the musicJSON file will be placed. </div>
+<br>
+<div> Run the visualization with the following command: </div>
+```javascript
+node visualizeData()
+```
 <br>
 <p align="center">
   <img src="data-visualisation/visualization.png" width="100%"/>
