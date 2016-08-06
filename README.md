@@ -53,11 +53,12 @@ node convertMusicXMLToJSON("pathToYouMusicXMLFile.xml")
 <h3>Tests</h3>
 <div>The most convenient way I have found to test this data is using a pianoroll visualization, so I have included this along the with the usual testing you would expect. This a tiny node/express app, and will look for data where the musicJSON file will be placed. </div>
 <br>
-<div> Runing the visualization command will make the visualization available from localhost:8080 and will look like figure 1. </div>
-<br>
+
 ```javascript
 node visualizeData()
 ```
+<br>
+<div> Runing the visualization command above will make the visualization available from localhost:8080 and will look like figure 1. </div>
 <br>
 <h6>Figure 1.</h6>
 <p align="center">
