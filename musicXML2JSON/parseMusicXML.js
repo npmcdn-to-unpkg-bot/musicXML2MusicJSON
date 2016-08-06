@@ -10,6 +10,7 @@ var extractAndCleanMusicXML = require('./parsingMethods/extractAndCleanMusicXML'
 var getListsOfVoicesAndInstruments = require('./parsingMethods/getListsOfVoicesAndInstruments');
 var groupByInstrument = require('./parsingMethods/groupByInstrument');
 var breakUpVoicesAndChords = require('./parsingMethods/breakUpVoicesAndChords');
+var caculateCurrentTempo = require('./parsingMethods/calculateCurrentTempo');
 var addAttributes = require('./parsingMethods/addAttributes');
 var addNotations = require('./parsingMethods/addNotations');
 /**
@@ -30,9 +31,8 @@ module.exports.parseRawMusicXML = function (pathToFile) {
                 });
             });
     }
-
-        
         , function (callback) {
+          
             musicXML2JSONConfig.arrayToHoldNotes = extractAndCleanMusicXML.extractNoteEventsFromParsedXML(musicXML2JSONConfig.parsedXML);
             callback(null, 0);
     }
@@ -44,7 +44,9 @@ module.exports.parseRawMusicXML = function (pathToFile) {
     }
         
         , function (callback) {
+            
             musicXML2JSONConfig.arrayToHoldInstrumentNames = getListsOfVoicesAndInstruments.getListOfDifferentInstrumentNames(musicXML2JSONConfig.arrayToHoldCleanedNotes);
+            
             callback(null, 2)
     }
         
@@ -60,17 +62,28 @@ module.exports.parseRawMusicXML = function (pathToFile) {
         
         , function (callback) {
             musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately = breakUpVoicesAndChords.breakUpVoicesAndChords(musicXML2JSONConfig.arrayToHoldVoiceNames, musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately);
+           
             callback(null, 5)
         }
         
         , function (callback) {
             musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately = addAttributes.addAttributes(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately);
             callback(null, 6)
+        } 
+        
+        ,  function (callback) {
+            
+            musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately = caculateCurrentTempo.calculateCurrentTempo(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately);
+            
+            
+            console.log(JSON.stringify(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately, null, 2))
+            callback(null, 6)
         }
         
         , function (callback) {
             musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately = addNotations.addNotations(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately);
-
+            
+            
             
             fs.writeFile('../data-visualisation/visualisation/data/rawData.json', JSON.stringify(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately, null, 2), function (err) {
                 if (err) return console.log(err);

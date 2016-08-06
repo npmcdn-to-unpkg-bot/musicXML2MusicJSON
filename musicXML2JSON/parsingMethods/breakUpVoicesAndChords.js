@@ -6,6 +6,7 @@ module.exports.breakUpVoicesAndChords = function (voiceNames, instrumentParts) {
     for (var i = 0; i < arrayToHoldVoiceNames.length; i++) {
         for (var j = 0; j < arrayToHoldEachInstrumentSeperately.length; j++) {
             timeLineCounter = 0;
+         
             for (var k = 0; k < arrayToHoldEachInstrumentSeperately[j].length; k++) {
                 if (arrayToHoldEachInstrumentSeperately[j][k].currentVoice == arrayToHoldVoiceNames[i]) {
                     if (arrayToHoldEachInstrumentSeperately[j][k].isHarmony === false) {

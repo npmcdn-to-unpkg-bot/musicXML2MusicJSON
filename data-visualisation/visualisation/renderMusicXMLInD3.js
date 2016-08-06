@@ -25,6 +25,9 @@ function drawPianoRoll() {}
 var canvas = createCanvas();
 var ruledCanvas = createRuler(canvas);
 
+
+
+
 var tooltip = d3.select("body")
     .append("div")
     .style("position", "absolute")
@@ -34,7 +37,47 @@ var tooltip = d3.select("body")
     .style("color", "white")
     .style("border-radius", "5px")
     .style("padding", "3px")
-    .style("font-size", "10px");
+    .style("font-size", "10px")
+    .style("width", "200px");
+
+
+function covertMidiNumberToNamedNote(midiNumber) {
+    var noteInOctave = midiNumber % 12;
+    var octave = Math.floor(midiNumber / 12);
+
+    
+    if (noteInOctave === 0) {
+        return 'C' + octave;
+    } else if (noteInOctave === 1) {
+        return 'C#/Db' + octave;
+    } else if (noteInOctave === 2) {
+        return 'D' + octave;
+    } else if (noteInOctave === 3) {
+        return 'D#/Eb' + octave;
+    } else if (noteInOctave === 4) {
+        return 'E' + octave;
+    } else if (noteInOctave === 5) {
+        return 'F' + octave;
+    } else if (noteInOctave === 6) {
+        return 'F#/Gb' + octave;
+    } else if (noteInOctave === 7) {
+        return 'G' + octave;
+    } else if (noteInOctave === 8) {
+        return 'G#/Ab' + octave;
+    } else if (noteInOctave === 9) {
+        return 'A' + octave;
+    } else if (noteInOctave === 10) {
+        return 'A#/Bb' + octave;
+    } else if (noteInOctave === 11) {
+        return 'B' + octave;
+    }
+    
+    
+    
+
+    
+   
+}
 
 
 function createTextForToolTip(absLocation,
@@ -48,11 +91,17 @@ function createTextForToolTip(absLocation,
                                location,
                                measure,
                                measureLocationInQuarterNotes,
-                               midiNumber) {
+                               midiNumber,
+                               qbpm,
+                               timeStamp) {
+    
+    
+   var noteFromMidi = covertMidiNumberToNamedNote(midiNumber);
+    
     return "<strong>Location:</strong> " 
         + absLocation
-        + "<br><strong>Time signature:</strong> " 
-        + beatType + '/' + beats
+        + "<br><strong>Current time signature:</strong> " 
+        + beats + '/' + beatType
         + "<br><strong>Current voice:</strong> " 
         + currentVoice
         + "<br><strong>Duration:</strong> " 
@@ -71,20 +120,29 @@ function createTextForToolTip(absLocation,
         + measureLocationInQuarterNotes
         + "<br><strong>Midi number</strong> " 
         + midiNumber
+        + "<br><strong>Note name</strong> " 
+        + noteFromMidi
+        + "<br><strong>Quarter beats per minute</strong> " 
+        + qbpm
+        + "<br><strong>Timestamp</strong> " 
+        + timeStamp;
+        
       
 
 
 }
 
 
-
+var color = 0;
 
 d3.json("data/rawData.json", function (error, data) {
     var arr = [];
-    for (var i = 0; i < data.length; i++) {
-        console.log(data[i])
-       canvas.selectAll("rect")
-            .data(data[i])
+    for (var j = 0; j < data.length; j++) {
+        color = color + 1
+        
+       var x = canvas.append("g")
+       x.selectAll("rect")
+            .data(data[j])
             .enter()
             .append("rect")
                 .attr("height", 10)
@@ -100,27 +158,35 @@ d3.json("data/rawData.json", function (error, data) {
                     
                     return 880 - (d.midiNumber * 10);
                 })
-                .attr("fill", "gray")
+                .attr("fill", function() {
+                    return d3.interpolateCubehelixDefault(color)
+                })
+                
                 .on("mouseover", function(d, i){
                     
                     var dataForNode = d3.select(this).datum();
-                    console.log(dataForNode);
+                   
                     var duration = d3.select(this).attr("width")
                     var pitch = d3.select(this).attr("y")
                     var location = d3.select(this).attr("x")
-                    var textForDisplay = createTextForToolTip(dataForNode.absLocation, 
-                                                              dataForNode.beatType, 
-                                                              dataForNode.beats, 
-                                                              dataForNode.currentVoice, 
-                                                              dataForNode.duration,
-                                                              dataForNode.durationWithNotations, 
-                                                              dataForNode.instrument, 
-                                                              dataForNode.isHarmony,
-                                                              dataForNode.location, 
-                                                              dataForNode.measure, 
-                                                              dataForNode.measureLocationInQuarterNotes, 
-                                                              dataForNode.midiNumber)
+                    var textForDisplay = createTextForToolTip(
+                          dataForNode.absLocation, 
+                          dataForNode.beatType, 
+                          dataForNode.beats, 
+                          dataForNode.currentVoice, 
+                          dataForNode.duration,
+                          dataForNode.durationWithNotations, 
+                          dataForNode.instrument, 
+                          dataForNode.isHarmony,
+                          dataForNode.location, 
+                          dataForNode.measure, 
+                          dataForNode.measureLocationInQuarterNotes, 
+                          dataForNode.midiNumber,
+                          dataForNode.qbpm,
+                          dataForNode.timeStamp)
+                    
                     tooltip.html(textForDisplay); 
+                    
                     return tooltip.style("visibility", "visible");
                 })
                 .on("mousemove", function(){

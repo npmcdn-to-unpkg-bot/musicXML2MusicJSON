@@ -13,12 +13,15 @@ module.exports.addAttributes = function (musicData) {
             }
             arrayToHoldEachInstrumentSeperately[i][j].beats = beats;
             arrayToHoldEachInstrumentSeperately[i][j].beatType = beatType;
-            arrayToHoldEachInstrumentSeperately[i][j].absLocation = measureStartingLocationInQuarterNotes + arrayToHoldEachInstrumentSeperately[i][j].location;
+           
             if (arrayToHoldEachInstrumentSeperately[i][j - 1]) {
                 if (arrayToHoldEachInstrumentSeperately[i][j - 1].measure !== arrayToHoldEachInstrumentSeperately[i][j].measure) {
                     measureStartingLocationInQuarterNotes = measureStartingLocationInQuarterNotes + (beats * 256);
                 }
             }
+            
+             arrayToHoldEachInstrumentSeperately[i][j].absLocation = measureStartingLocationInQuarterNotes + arrayToHoldEachInstrumentSeperately[i][j].location;
+            
             arrayToHoldEachInstrumentSeperately[i][j].measureLocationInQuarterNotes = measureStartingLocationInQuarterNotes;
         }
     }

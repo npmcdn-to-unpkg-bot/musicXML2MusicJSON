@@ -10,10 +10,13 @@ module.exports.extractNoteEventsFromParsedXML = function (parsedMusicXML) {
     var arrayToHoldParts = [];
     var noteStorer = {};
     var arrayToHoldNotes = [];
+    var globalTempoHolder = 60;
+    
     lodash.forEach(parsedXML, function (value, key) {
         arrayToHoldParts.push(value.measure)
     })
     for (var i = 0; i < arrayToHoldParts.length; i++) {
+        
         for (var j = 0; j < arrayToHoldParts[i].length; j++) {
             for (var k = 0; k < arrayToHoldParts[i][j].note.length; k++) {
                 noteStorer = {};
@@ -23,6 +26,19 @@ module.exports.extractNoteEventsFromParsedXML = function (parsedMusicXML) {
                 noteStorer.rest = arrayToHoldParts[i][j].note[k].rest
                 noteStorer.type = arrayToHoldParts[i][j].note[k].type
                 noteStorer.voice = arrayToHoldParts[i][j].note[k].voice
+                try {
+                    
+                    //console.log(JSON.stringify(arrayToHoldParts[i][j].direction[1]["direction-type"][0], null, 2))
+                    
+                    globalTempoHolder = arrayToHoldParts[i][j].direction[1]["direction-type"][0];
+                    
+                    noteStorer.currentTempo = arrayToHoldParts[i][j].direction[1]["direction-type"][0];
+                    
+                    
+                }
+                catch(err) {
+                    noteStorer.currentTempo = globalTempoHolder;
+                }
                 try {
                     noteStorer.notations = arrayToHoldParts[i][j].note[k].notations
                 }
@@ -66,9 +82,14 @@ module.exports.cleanMusicXML = function (arrayToHoldNotes) {
             cleanedNoteStorer.isHarmony = false;
         }
         cleanedNoteStorer.measure = arrayToHoldNotes[i].measure;
+        cleanedNoteStorer.currentMeasure = arrayToHoldNotes[i].currentMeasure;
+
         cleanedNoteStorer.duration = parseInt(arrayToHoldNotes[i].duration);
+        
+        cleanedNoteStorer.currentTempo = arrayToHoldNotes[i].currentTempo;
         cleanedNoteStorer.instrument = parseMusicXMLUtilities.cleanInstrumentToString(arrayToHoldNotes[i].instrument);
         cleanedNoteStorer.currentVoice = parseInt(currentVoice[0]);
+        
         cleanedNoteStorer.notations = arrayToHoldNotes[i].notations;
         cleanedNoteStorer.attributes = arrayToHoldNotes[i].attributes;
         arrayToHoldCleanedNotes.push(cleanedNoteStorer);
