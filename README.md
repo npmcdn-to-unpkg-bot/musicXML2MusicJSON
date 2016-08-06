@@ -42,63 +42,71 @@
 
 <h2>MusicJSON Attributes</h2>
 
-<h5>Midi number</h5>
-<div>
-   Number between 0 and 127 where 60 = Middle C = C4
-</div>
-<h5>Duration</h5>
-<div>
-   Number between 0 and 127 where 60 = Middle C = C4
-</div>
-<h5>Harmony note flag</h5>
-<div>
-   Number between 0 and 127 where 60 = Middle C = C4
-</div>
-<h5>Measure</h5>
-<div>
-   Number between 0 and 127 where 60 = Middle C = C4
-</div>
 <h5>Instrument</h5>
 <div>
-   Number between 0 and 127 where 60 = Middle C = C4
+   Instrument name.
 </div>
 <h5>Voice</h5>
 <div>
-   Number between 0 and 127 where 60 = Middle C = C4
+   Voice number within MusicXML part.
 </div>
-<h5>Location</h5>
+
+<h5>Midi number</h5>
 <div>
-   Number between 0 and 127 where 60 = Middle C = C4
+   Number between 0 and 127 where 60 = Middle C = C4. 
 </div>
-<h5>Duration including ties</h5>
+<h5>Duration</h5>
 <div>
-   Number between 0 and 127 where 60 = Middle C = C4
+   Lengh of a note or rest, where quarter note = 256.
 </div>
+
+<h5>Duration due to tied notes</h5>
+<div>
+   Modifier of the Duration attribute, due to tied values. Notes that are tied to a next note will accumulate the duration of the next note. Notes that are tied to a prior note will have 0 value.
+</div>
+
+<h5>Harmony note flag</h5>
+<div>
+   Boolean indicating note has been encoded as a MusicXML chord
+</div>
+<h5>Measure</h5>
+<div>
+   Integer representing current measure
+</div>
+<h5>Absolute Location</h5>
+<div>
+   Location of a beginning of a note of rest, where a quarter note = 256
+</div>
+
+<h5>Measure location</h5>
+<div>
+   Location of a measure in quarter notes, where a quarter note = 256
+</div>
+
+<h5>Location in measure</h5>
+<div>
+   Location of the beginning of a note or rest within a measure, where a quarter note = 256
+</div>
+
 <h5>Time signature numerator</h5>
 <div>
-   Number between 0 and 127 where 60 = Middle C = C4
+   Number of beats in a measure
 </div>
 
 <h5>Time signature denominator</h5>
 <div>
-   Number between 0 and 127 where 60 = Middle C = C4
+   Type of beats in a measure
 </div>
-<h5>Absolute location</h5>
+
+<h5>Quarter beats per minute</h5>
 <div>
-   Number between 0 and 127 where 60 = Middle C = C4
-</div>
-<h5>Measure location in quarter notes</h5>
-<div>
-   Number between 0 and 127 where 60 = Middle C = C4
+   This is a standard bpm metronome measure, however, all values are converted to quarter note beats per minute.
 </div>
 <h5>Timestamp</h5>
 <div>
-   Number between 0 and 127 where 60 = Middle C = C4
+   Time relative to beginning of music, calculated from the Absolute Location and Quarter Beats Per Minute attribute
 </div>
-<h5>Quarter beats per minute</h5>
-<div>
-   Number between 0 and 127 where 60 = Middle C = C4
-</div>
+
 
 
 
