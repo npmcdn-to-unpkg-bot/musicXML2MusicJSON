@@ -142,7 +142,7 @@ node visualizeData.js
 
 <a name="issues"></a>
 <h3>Issues and Future work</h3>
-<div>I have focused on the parts of a MusicXML specification that I need for a particular research project that centers around time, frequency, and location type information. If there is anything you want added let me know, or send a pull request.</div>
+<div>I have focused on the parts of a MusicXML specification that I need for a particular research project that centers around time, frequency, and location type information. I am also implementing it as a use it as a back end parser for my music search and analysis software at <a href="http://stelupa.com">stelupa.com</a> If there is anything you want added let me know, or send a pull request.</div>
 <br>
 <div>
 A couple of glaring ommissions I need to addres - encoding of global metadata is needed(things such as composed year etc), more tests needed and also need to fix some tied note issues. Will get to this as soon as possible.  
