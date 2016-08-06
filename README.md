@@ -75,11 +75,11 @@ node visualizeData.js
 <a name="attributes"></a>
 <h3>Attributes description</h3>
 
-<h4>Instrument</h4>
+<h5>Instrument</h5>
 <div>
    String with intrument name
 </div>
-<h4>Voice</h4>
+<h5>Voice</h5>
 <div>
    Integer as current voice number of note or rest
 </div>
