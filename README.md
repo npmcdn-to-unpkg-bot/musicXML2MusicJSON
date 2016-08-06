@@ -1,6 +1,6 @@
 <h2>MusicXML2JSON</h2>
 
-<div>The purpose of this Node module is to convert MusicXML files into a timestamped JSON files, to make this type of data more suited to time-series analysis and data visualizations. One of the drawbacks of MusicXML is that it does not explicitly encode time information (in the sense that any particular note or rest can be interrogated for its temporal position). <br>MusicJSON sets out to solve this.</div>
+<div>The purpose of this Node module is to convert MusicXML files into timestamped JSON files, to make this type of data more suited to time-series analysis and data visualizations. One of the drawbacks of MusicXML is that it does not explicitly encode time information (in the sense that any particular note or rest can be interrogated for its temporal position). <br>MusicJSON sets out to solve this.</div>
 
 
 <h3>Sample output</h3>
@@ -44,19 +44,22 @@
 
 <h3>Usage</h3>
 <div>Run the MusicXML2JSON module with the followng command. It will output a data.json file into the ./data folder </div>
+<br>
 ```javascript
 node convertMusicXMLToJSON("pathToYouMusicXMLFile.xml")
 ```
 
 
 <h3>Tests</h3>
-<div>The most convenient way I have found to test this data is using a pianoroll visualization, so I have included this along the with the usual testing you would expect. The visualization will look in the output folder which is the output file where the musicJSON file will be placed. </div>
+<div>The most convenient way I have found to test this data is using a pianoroll visualization, so I have included this along the with the usual testing you would expect. This a tiny node/express app, and will look for data where the musicJSON file will be placed. </div>
 <br>
-<div> Run the visualization with the following command: </div>
+<div> Runing the visualization command will make the visualization available from localhost:8080 and will look like figure 1. </div>
+<br>
 ```javascript
 node visualizeData()
 ```
 <br>
+<small>Figure 1.</small>
 <p align="center">
   <img src="data-visualisation/visualization.png" width="100%"/>
  
