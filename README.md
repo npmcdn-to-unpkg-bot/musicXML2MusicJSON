@@ -95,7 +95,7 @@ node visualizeData.js
 
 <h5>Duration due to tied notes</h5>
 <div>
-   Modification of the <b>Duration</b> attribute as an integer value. Notes or rests that are tied to a next note will accumulate the duration of the next note. Notes that are tied to a prior note will have 0 value
+   Modification of the <b>Duration</b> attribute as an integer value. Notes or rests that are tied to a next note will accumulate the duration of the next note. Notes that are tied to a prior note will have 0 value. This is the more accurate representation of duration
 </div>
 
 <h5>Harmony note flag</h5>
@@ -133,7 +133,7 @@ node visualizeData.js
 
 <h5>Quarter beats per minute</h5>
 <div>
-   Integer representing a standard bpm metronome measure, however, all values are converted to calculate quarter note beats per minute.
+   Integer representing a standard bpm metronome measure, however, all values are converted to calculate quarter note beats per minute. If no tempo information is availalbe from the MusicXML, the default value is 60
 </div>
 <h5>Timestamp</h5>
 <div>
