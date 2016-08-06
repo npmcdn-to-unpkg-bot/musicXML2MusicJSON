@@ -56,8 +56,8 @@
 node convertMusicXMLToJSON.js -m "pathToYouMusicXMLFile.xml"
 ```
 
-
-<h3>Tests</h3>
+<a name="testing"></a>
+<h3>Testing</h3>
 <div>The most convenient way I have found to test this data is using a pianoroll visualization, so I have included this along the with the usual testing you would expect. This a tiny node/express app, and will look for data where the musicJSON file will be placed. </div>
 <br>
 
@@ -73,7 +73,8 @@ node visualizeData.js
  
 </p>
 
-<h3>Explanation of attributes</h3>
+<a name="attributes"></a>
+<h3>Attributes description</h3>
 
 <h3>Instrument</h3>
 <div>
@@ -140,7 +141,7 @@ node visualizeData.js
    Time relative to beginning of music, calculated from the Absolute Location and Quarter Beats Per Minute attribute
 </div>
 
-
+<a name="issues"></a>
 <h3>Issues & Future work</h3>
 <div>I have focused on the parts of a MusicXML specification that I need for a particular research project that centers around time, frequency, and location type information. If there is anything you want added let me know, or send a pull request.</div>
 <br>
