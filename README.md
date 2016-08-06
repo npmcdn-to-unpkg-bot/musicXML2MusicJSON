@@ -90,7 +90,7 @@ node visualizeData.js
 </div>
 <h5>Duration</h5>
 <div>
-   Integer indicating duraiotn of a note or rest, where a quarter note = 256
+   Integer indicating duration of a note or rest, where a quarter note = 256
 </div>
 
 <h5>Duration due to tied notes</h5>
@@ -108,42 +108,47 @@ node visualizeData.js
 </div>
 <h5>Absolute Location</h5>
 <div>
-   Location of a beginning of a note of rest, where a quarter note = 256
+   Integer representing location of a beginning of a note of rest, where a quarter note = 256
 </div>
 
 <h5>Measure location</h5>
 <div>
-   Location of a measure in quarter notes, where a quarter note = 256
+   Integer representing location of a the beginning of a measure,  where a quarter note = 256
 </div>
 
 <h5>Location in measure</h5>
 <div>
-   Location of the beginning of a note or rest within a measure, where a quarter note = 256
+   Integer representing the distance from the beginning of a note or rest to the beginning of the measure which it is in, where a quarter note = 256
 </div>
 
 <h5>Time signature numerator</h5>
 <div>
-   Number of beats in a measure
+   Integer representing number of beats in a measure
 </div>
 
 <h5>Time signature denominator</h5>
 <div>
-   Type of beats in a measure
+   Integer representing type of beats in a measure
 </div>
 
 <h5>Quarter beats per minute</h5>
 <div>
-   This is a standard bpm metronome measure, however, all values are converted to quarter note beats per minute.
+   Integer representing a standard bpm metronome measure, however, all values are converted to calculate quarter note beats per minute.
 </div>
 <h5>Timestamp</h5>
 <div>
-   Time relative to beginning of music, calculated from the Absolute Location and Quarter Beats Per Minute attribute
+   Time in milliseconds of a note or rest relative to beginning of music, calculated from the Absolute Location and Quarter Beats Per Minute attributes
 </div>
 
 <a name="issues"></a>
 <h3>Issues and Future work</h3>
-<div>I have focused on the parts of a MusicXML specification that I need for a particular research project that centers around time, frequency, and location type information. I am also implementing it as a use it as a back end parser for my music search and analysis software at <a href="http://stelupa.com">stelupa.com</a> If there is anything you want added let me know, or send a pull request.</div>
+<div>I have focused on the parts of a MusicXML specification that I need for a particular research project that centers around time, frequency, and location type information. I am also implementing it as a use it as a back end parser for my music search and analysis software at <a href="http://stelupa.com">stelupa.com</a>.</div>
 <br>
 <div>
-A couple of glaring ommissions I need to addres - encoding of global metadata is needed(things such as composed year etc), more tests needed and also need to fix some tied note issues. Will get to this as soon as possible.  
+A couple of ommissions to be fixed as soon as possible - encoding of global metadata is needed(things such as composed year etc), some more tests needed and also need to fix some tied note issues. There are also notations, attributes and directions (things like slurs, mordents, directions etc) and I will bring those over too.  If there is anything you want added let me know, or send a pull request
 </div>
+
+
+
+
+
