@@ -142,7 +142,7 @@ node visualizeData.js
 </div>
 
 <a name="issues"></a>
-<h3>Issues & Future work</h3>
+<h3>Issues and Future work</h3>
 <div>I have focused on the parts of a MusicXML specification that I need for a particular research project that centers around time, frequency, and location type information. If there is anything you want added let me know, or send a pull request.</div>
 <br>
 <div>
