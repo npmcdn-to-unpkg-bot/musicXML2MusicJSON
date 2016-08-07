@@ -70,10 +70,10 @@ module.exports.cleanMusicXML = function (arrayToHoldNotes) {
             currentVoice = arrayToHoldNotes[i].voice
         }
         if (arrayToHoldNotes[i].pitch) {
-            cleanedNoteStorer.midiNumber = parseMusicXMLUtilities.convertPitchInformationToMidiNumber(arrayToHoldNotes[i].pitch)
+            cleanedNoteStorer["Midi number"] = parseMusicXMLUtilities.convertPitchInformationToMidiNumber(arrayToHoldNotes[i].pitch)
         }
         else {
-            cleanedNoteStorer.midiNumber = constants.MIDI_NUMBER_WHEN_REST;
+            cleanedNoteStorer["Midi number"] = constants.MIDI_NUMBER_WHEN_REST;
         }
         if (arrayToHoldNotes[i].chord) {
             cleanedNoteStorer.isHarmony = true;
@@ -82,8 +82,8 @@ module.exports.cleanMusicXML = function (arrayToHoldNotes) {
             cleanedNoteStorer.isHarmony = false;
         }
         cleanedNoteStorer.measure = arrayToHoldNotes[i].measure;
-        cleanedNoteStorer.currentMeasure = arrayToHoldNotes[i].currentMeasure;
-
+//        cleanedNoteStorer.currentMeasure = arrayToHoldNotes[i].currentMeasure;
+//        console.log(cleanedNoteStorer.currentMeasure);
         cleanedNoteStorer.duration = parseInt(arrayToHoldNotes[i].duration);
         
         cleanedNoteStorer.currentTempo = arrayToHoldNotes[i].currentTempo;

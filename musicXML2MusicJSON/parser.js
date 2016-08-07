@@ -13,15 +13,7 @@ var breakUpVoicesAndChords = require('./parsingFunctions/breakUpVoicesAndChords'
 var caculateCurrentTempo = require('./parsingFunctions/calculateCurrentTempo');
 var addAttributes = require('./parsingFunctions/addAttributes');
 var addNotations = require('./parsingFunctions/addNotations');
-
-
-/**
- * Asyn function
- * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
- * Takes a string to an MusicXML to parse to JSON
- * @param {string} pathToFile - path of MusicXML file
- * @return { object } - object containing parsed MusicXML data
- */
+var finalClean = require('./parsingFunctions/finalClean');
 module.exports.parseRawMusicXML = function (pathToFile) {
     var pathToFile = pathToFile
     async.series([
@@ -33,11 +25,13 @@ module.exports.parseRawMusicXML = function (pathToFile) {
                 });
             });
     }
+
         
         , function (callback) {
             musicXML2JSONConfig.arrayToHoldNotes = extractAndCleanMusicXML.extractNoteEventsFromParsedXML(musicXML2JSONConfig.parsedXML);
             callback(null, 0);
     }
+
 
 
         
@@ -46,11 +40,13 @@ module.exports.parseRawMusicXML = function (pathToFile) {
             callback(null, 1)
     }
 
+
         
         , function (callback) {
             musicXML2JSONConfig.arrayToHoldInstrumentNames = getListsOfVoicesAndInstruments.getListOfDifferentInstrumentNames(musicXML2JSONConfig.arrayToHoldCleanedNotes);
             callback(null, 2)
     }
+
 
         
         , function (callback) {
@@ -58,11 +54,13 @@ module.exports.parseRawMusicXML = function (pathToFile) {
             callback(null, 3)
     }
 
+
         
         , function (callback) {
             musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately = groupByInstrument.groupByInstrument(musicXML2JSONConfig.arrayToHoldInstrumentNames, musicXML2JSONConfig.arrayToHoldCleanedNotes);
             callback(null, 4)
     }
+
 
         
         , function (callback) {
@@ -70,34 +68,45 @@ module.exports.parseRawMusicXML = function (pathToFile) {
             callback(null, 5)
         }
 
+
         
         , function (callback) {
             musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately = addAttributes.addAttributes(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately);
             callback(null, 6)
         }
 
+
         
         , function (callback) {
             musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately = caculateCurrentTempo.calculateCurrentTempo(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately);
-
             callback(null, 6)
         }
+
 
         
         , function (callback) {
             musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately = addNotations.addNotations(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately);
-            fs.writeFile('../visualization/visualization/data/output.json', JSON.stringify(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately, null, 2), function (err) {
+
+            callback(null, 7);
+        }
+
+         
+        , function (callback) {
+            musicXML2JSONConfig.musicJSON = finalClean.finalClean(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately);
+            
+            
+            fs.writeFile('../visualization/visualization/data/output.json', JSON.stringify(musicXML2JSONConfig.musicJSON, null, 2), function (err) {
                 if (err) return console.log(err);
-                
             });
             
             
-            fs.writeFile('outputData/output.json', JSON.stringify(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately, null, 2), function (err) {
+            fs.writeFile('outputData/output.json', JSON.stringify(musicXML2JSONConfig.musicJSON, null, 2), function (err) {
                 if (err) return console.log(err);
                 console.log('Finished. \nMusicJSON file in "outputData/rawData.json" and "../data-visualisation/visualisation/data/rawData.json"');
             });
-            callback(null, 7);
-        },
+           
+            callback(null, 8)
+        }
 
 ], function (err, results) {});
 }

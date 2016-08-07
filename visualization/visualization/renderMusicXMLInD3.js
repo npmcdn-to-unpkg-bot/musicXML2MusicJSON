@@ -107,12 +107,12 @@ function createTextForToolTip(absLocation,
         + measureLocationInQuarterNotes
         + "<br><strong>Midi number</strong> " 
         + midiNumber
-        + "<br><strong>Note name</strong> " 
-        + noteFromMidi
         + "<br><strong>Quarter beats per minute</strong> " 
         + qbpm
         + "<br><strong>Timestamp</strong> " 
-        + timeStamp;
+        + timeStamp
+        + "<br><strong>Note name</strong> " 
+        + noteFromMidi
         
       
 
@@ -123,6 +123,7 @@ function createTextForToolTip(absLocation,
 
 
 d3.json("data/output.json", function (error, data) {
+
     var arr = [];
     for (var j = 0; j < data.length; j++) {
         color = color + 1
@@ -135,15 +136,15 @@ d3.json("data/output.json", function (error, data) {
                 .attr("height", 10)
                 .attr("width", function (d, i) {
                     
-                    return d.duration / 256 * 25
+                    return d["Duration"] / 256 * 25
                 })
                 .attr("x", function (d, i) {
 
-                    return (d.absLocation / 256 * 25) + 50;
+                    return (d["Location"] / 256 * 25) + 50;
                 })
                 .attr("y", function(d,i) {
                     
-                    return 880 - (d.midiNumber * 10);
+                    return 880 - (d["Midi number"] * 10);
                 })
                 .attr("fill", function() {
                     return d3.interpolateCubehelixDefault(color)
@@ -157,20 +158,20 @@ d3.json("data/output.json", function (error, data) {
                     var pitch = d3.select(this).attr("y")
                     var location = d3.select(this).attr("x")
                     var textForDisplay = createTextForToolTip(
-                          dataForNode.absLocation, 
-                          dataForNode.beatType, 
-                          dataForNode.beats, 
-                          dataForNode.currentVoice, 
-                          dataForNode.duration,
-                          dataForNode.durationWithNotations, 
-                          dataForNode.instrument, 
-                          dataForNode.isHarmony,
-                          dataForNode.location, 
-                          dataForNode.measure, 
-                          dataForNode.measureLocationInQuarterNotes, 
-                          dataForNode.midiNumber,
-                          dataForNode.qbpm,
-                          dataForNode.timeStamp)
+                          dataForNode["Location"], 
+                          dataForNode["Time signature denominator"], 
+                          dataForNode["Time signature numerator"], 
+                          dataForNode["Voice"], 
+                          dataForNode["Duration"],
+                          dataForNode["Duration due to tied notes"], 
+                          dataForNode["Instrument"], 
+                          dataForNode["Harmony note flag"],
+                          dataForNode["Location in measure"], 
+                          dataForNode["Current measure"], 
+                          dataForNode["Measure location"], 
+                          dataForNode["Midi number"],
+                          dataForNode["Quarter beats per minute"],
+                          dataForNode["Time stamp"])
                     
                     tooltip.html(textForDisplay); 
                     
