@@ -52,7 +52,7 @@
 <div>Run the MusicXML2MusicJSON module with the followng command. It will output a data.json file into the <i>./data</i> folder </div>
 <br>
 ```javascript
-node convertMusicXMLToJSON.js -f "pathToYouMusicXMLFile.xml"
+node convertMusicXML2MusicJSON.js -f "pathToYouMusicXMLFile.xml"
 ```
 
 <a name="testing"></a>
