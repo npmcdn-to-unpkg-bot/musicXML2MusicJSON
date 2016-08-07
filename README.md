@@ -4,7 +4,7 @@
 <br>
 <div><a href="#sample">Sample output</a></div>
 <div><a href="#usage">Usage</a></div>
-<div><a href="#testing">Docs and Testing</a></div>
+<div><a href="#testing">Testing, docs and visualization</a></div>
 <div><a href="#attributes">Attributes description</a></div>
 <div><a href="#issues">Issues and future work</a></div>
 
@@ -56,7 +56,7 @@ node convertMusicXML2MusicJSON.js -f "pathToYouMusicXMLFile.xml"
 ```
 
 <a name="testing"></a>
-<h3>Docs and Testing</h3>
+<h3>Testing, docs and visualization</h3>
 <div>JSDocs for all the MusicXML2MusicJSON code can be found in the <i>out</i> folder and has been generated with <a href="http://usejsdoc.org/">JSDocs</a></div>
 <br>
 <div>The most convenient way I have found to test this data is by using a pianoroll visualization, so I have included this along the with the usual tests you would expect. This a tiny node/express app, and will look for data where the musicJSON file will be placed. </div>
@@ -147,7 +147,7 @@ node visualizeData.js
 <div>I have focused on the parts of a MusicXML specification that I need for a particular research project that centers around time, frequency, and location type information. I am also using a variation of this as a back end parser for my music search and analysis software at <a href="http://stelupa.com">stelupa.com</a>.</div>
 <br>
 <div>
-A couple of ommissions to be fixed as soon as possible - encoding of global metadata is needed(things such as composed year etc), some more tests needed and also need to fix some tied note issues. There are also notations, attributes and directions (things like slurs, mordents, directions etc) and I will bring those over too. Also, I am using Sibelius and MuseScore to generate the MusicXML and I don't know if this will play nicely with MusicXML files generated in other ways. I will get to the bottom of that soon. If there is anything you want added let me know, or send a pull request
+A couple of ommissions to be fixed as soon as possible - encoding of global metadata is needed(things such as composed year etc), some more tests needed and also need to fix some tied note issues. There are also notations, attributes and directions (things like slurs, mordents, directions etc) and I will bring those over too, but still deciding how I want to structure that. Also, I am using Sibelius mostly to generate the MusicXML and I don't know if this will play nicely with MusicXML files generated in other ways. I will get to the bottom of that soon and at least make things compliant to MuseScore. Once I sort that stuff out I will release it into the wild as a node module. If there is anything you want added let me know, or send a pull request.
 </div>
 <br>
 <div>Jamie Gabriel</div>
