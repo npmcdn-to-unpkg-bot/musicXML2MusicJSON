@@ -70,7 +70,7 @@ node visualizeData.js
 <br>
 <h6>Figure 1.</h6>
 <p align="center">
-  <img src="data-visualisation/visualization.png" width="100%"/>
+  <img src="visualization.png" width="100%"/>
  
 </p>
 

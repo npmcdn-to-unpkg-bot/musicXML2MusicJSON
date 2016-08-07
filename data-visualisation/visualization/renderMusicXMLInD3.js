@@ -1,3 +1,5 @@
+var color = 0;
+
 function createCanvas() {
     var canvas = d3.select("body").append("svg");
     
@@ -16,18 +18,7 @@ function createCanvas() {
     return canvas;
 }
 
-function createRuler(canvas) {
-    return canvas;
-}
-
-function drawPianoRoll() {}
-
 var canvas = createCanvas();
-var ruledCanvas = createRuler(canvas);
-
-
-
-
 var tooltip = d3.select("body")
     .append("div")
     .style("position", "absolute")
@@ -72,13 +63,9 @@ function covertMidiNumberToNamedNote(midiNumber) {
         return 'B' + octave;
     }
     
-    
-    
 
-    
-   
 }
-
+ 
 
 function createTextForToolTip(absLocation,
                                beatType,
@@ -133,7 +120,7 @@ function createTextForToolTip(absLocation,
 }
 
 
-var color = 0;
+
 
 d3.json("data/output.json", function (error, data) {
     var arr = [];
