@@ -84,7 +84,7 @@ module.exports.parseRawMusicXML = function (pathToFile) {
         
         , function (callback) {
             musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately = addNotations.addNotations(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately);
-            fs.writeFile('../data-visualisation/visualization/data/output.json', JSON.stringify(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately, null, 2), function (err) {
+            fs.writeFile('../visualization/visualization/data/output.json', JSON.stringify(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately, null, 2), function (err) {
                 if (err) return console.log(err);
                 
             });
