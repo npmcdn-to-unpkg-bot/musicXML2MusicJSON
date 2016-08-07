@@ -135,7 +135,7 @@ function createTextForToolTip(absLocation,
 
 var color = 0;
 
-d3.json("data/rawData.json", function (error, data) {
+d3.json("data/output.json", function (error, data) {
     var arr = [];
     for (var j = 0; j < data.length; j++) {
         color = color + 1

@@ -21,9 +21,9 @@ app.use(function(req, res, next) {
 });
 
 app.use(morgan('dev'));
-app.use(express.static(__dirname + '/visualisation'));
+app.use(express.static(__dirname + '/visualization'));
 app.get('*', function(req, res) {
-	res.sendFile(path.join(__dirname + '/visualisation/index.html'));
+	res.sendFile(path.join(__dirname + '/visualization/index.html'));
 });
 
 

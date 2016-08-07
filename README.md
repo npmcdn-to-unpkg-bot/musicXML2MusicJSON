@@ -49,7 +49,7 @@
 
 <a name="usage"></a>
 <h3>Usage</h3>
-<div>Run the MusicXML2MusicJSON module with the followng command. It will output a data.json file into the <i>./data</i> folder </div>
+<div>After downloading and running npm install, use the MusicXML2MusicJSON module with the followng command. It will output a data.json file into the <i>./data</i> folder </div>
 <br>
 ```javascript
 node convertMusicXML2MusicJSON.js -f "pathToYouMusicXMLFile.xml"
