@@ -1,4 +1,4 @@
-//node convertMusicXML2MusicJSON.js  '/corpus/test.xml'
+//node convertMusicXML2MusicJSON.js  '/corpus/bach.xml'
 
 var parseMusicXML = require('./parseMusicXML')
 var argv = require('minimist')(process.argv.slice(2));

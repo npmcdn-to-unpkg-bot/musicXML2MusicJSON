@@ -1,6 +1,6 @@
 var lodash = require('lodash')
-var parseMusicXMLUtilities = require('.././parseMusicXMLUtilities');
-var constants = require('.././constants')
+var parseMusicXMLUtilities = require('.././utilities/utilities');
+var constants = require('.././utilities/constants')
     /**
      * <p>Processes raw html and will take any MusicXML file</p>
      * <p>Testing completed from MusicXML from Sibelius and Musescore</p>

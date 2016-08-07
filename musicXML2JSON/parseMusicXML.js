@@ -3,16 +3,18 @@ var xml2js = require('xml2js');
 var parser = new xml2js.Parser();
 var lodash = require('lodash');
 var async = require('async');
-var parseMusicXMLUtilities = require('./parseMusicXMLUtilities');
-var constants = require('./constants');
+var parseMusicXMLUtilities = require('./utilities/utilities');
+var constants = require('./utilities/constants');
 var musicXML2JSONConfig = require('./musicXML2JSONConfig');
-var extractAndCleanMusicXML = require('./parsingMethods/extractAndCleanMusicXML');
-var getListsOfVoicesAndInstruments = require('./parsingMethods/getListsOfVoicesAndInstruments');
-var groupByInstrument = require('./parsingMethods/groupByInstrument');
-var breakUpVoicesAndChords = require('./parsingMethods/breakUpVoicesAndChords');
-var caculateCurrentTempo = require('./parsingMethods/calculateCurrentTempo');
-var addAttributes = require('./parsingMethods/addAttributes');
-var addNotations = require('./parsingMethods/addNotations');
+var extractAndCleanMusicXML = require('./parsingFunctions/extractAndCleanMusicXML');
+var getListsOfVoicesAndInstruments = require('./parsingFunctions/getListsOfVoicesAndInstruments');
+var groupByInstrument = require('./parsingFunctions/groupByInstrument');
+var breakUpVoicesAndChords = require('./parsingFunctions/breakUpVoicesAndChords');
+var caculateCurrentTempo = require('./parsingFunctions/calculateCurrentTempo');
+var addAttributes = require('./parsingFunctions/addAttributes');
+var addNotations = require('./parsingFunctions/addNotations');
+
+
 /**
  * Asyn function
  * http://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-notations.htm
