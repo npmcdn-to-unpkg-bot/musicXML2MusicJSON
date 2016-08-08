@@ -14,6 +14,8 @@ var caculateCurrentTempo = require('./parsingFunctions/calculateCurrentTempo');
 var addAttributes = require('./parsingFunctions/addAttributes');
 var addNotations = require('./parsingFunctions/addNotations');
 var finalClean = require('./parsingFunctions/finalClean');
+
+
 module.exports.parseRawMusicXML = function (pathToFile) {
     var pathToFile = pathToFile
     async.series([
