@@ -1,0 +1,104 @@
+(C) 1994, 2002 Center for Computer Assisted Research in the Humanities.
+ID: {bach/bg/keybd/wtc-ii/0870/stage2/01/02} [KHM:2381502658]
+TIMESTAMP: DEC/26/2001 [md5sum:4c9fcb7dc7b4c84d2eb79ab49b161bd3]
+01/29/94 W. Hewlett
+WK#:870       MV#:1
+Bach Gesellschaft xiv   
+WTC II: Prelude and Fugue in C major
+Prelude I. 
+Track 2
+1 1 
+Group memberships: sound 
+sound: part 2 of 6 
+&
+Initial conversion from stage 1 to stage 2
+&
+$  K:0   Q:4   T:1/1  C:4
+rest  16
+measure 2
+rest  16
+measure 3
+irest  1        s 
+C4     3-       e.    u        -
+C4     4-       q     u        - 
+C4     8        h     u 
+measure 4
+rest  16
+measure 5
+rest  16
+measure 6
+rest  16
+measure 7
+rest  16
+measure 8
+rest  16
+measure 9
+rest  16
+measure 10
+rest  16
+measure 11
+rest  16
+measure 12
+rest  16
+measure 13
+rest  16
+measure 14
+rest  16
+measure 15
+rest  16
+measure 16
+rest  16
+measure 17
+rest  16
+measure 18
+rest  16
+measure 19
+rest  16
+measure 20
+rest  16
+measure 21
+rest  16
+measure 22
+rest  16
+measure 23
+rest  16
+measure 24
+rest  16
+measure 25
+rest  16
+measure 26
+rest  16
+measure 27
+rest  16
+measure 28
+rest  16
+measure 29
+irest  8        h 
+irest  4        q 
+D5     4-       q     d        - 
+measure 30
+D5     2        e     u  [
+C5     1        s     u  =[
+B4     1        s     u  ]]
+C5     4        q     u 
+rest   8        h
+measure 31
+rest  16
+measure 32
+rest  16
+measure 33
+rest   1        s
+A4     1        s     d  [[
+G4     1        s     d  ==
+F4     1        s     d  ]]
+G4     2        e     d  [
+E4     2        e     d  ]
+C4     4        q     d
+rest   1        s
+F4     1        s     d  [/
+D4     2        e     d  ]
+measure 34
+E4    16        w     d
+ C4   16        w     d
+mheavy2
+/END

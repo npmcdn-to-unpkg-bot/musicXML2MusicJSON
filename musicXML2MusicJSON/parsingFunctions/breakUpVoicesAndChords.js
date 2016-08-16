@@ -26,5 +26,7 @@ module.exports.breakUpVoicesAndChords = function (voiceNames, instrumentParts) {
             }
         }
     }
+    
+    //console.log(arrayToHoldEachInstrumentSeperately);
     return arrayToHoldEachInstrumentSeperately;
 }

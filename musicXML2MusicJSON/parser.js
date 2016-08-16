@@ -6,6 +6,7 @@ var async = require('async');
 var parseMusicXMLUtilities = require('./utilities/utilities');
 var constants = require('./utilities/constants');
 var musicXML2JSONConfig = require('./musicXML2JSONConfig');
+var obtainDivisions = require('./parsingFunctions/obtainDivisions');
 var extractAndCleanMusicXML = require('./parsingFunctions/extractAndCleanMusicXML');
 var getListsOfVoicesAndInstruments = require('./parsingFunctions/getListsOfVoicesAndInstruments');
 var groupByInstrument = require('./parsingFunctions/groupByInstrument');
@@ -16,38 +17,59 @@ var addNotations = require('./parsingFunctions/addNotations');
 var finalClean = require('./parsingFunctions/finalClean');
 
 
-module.exports.parseRawMusicXML = function (pathToFile) {
+module.exports.parseRawMusicXML = function (pathToFile, pathToOtherGlobalMetaData) {
+    
+    // temp for KJ solos
+    var writeTitle = pathToFile.split('/', 5)[4];
+    writeTitle = writeTitle.substr(0, writeTitle.length - 4);
+    
+
+    
+    var parsedJSON = require(pathToOtherGlobalMetaData);
+    musicXML2JSONConfig.globalMetaData = require(pathToOtherGlobalMetaData);
+    //console.log(parsedJSON);
+
+ 
     var pathToFile = pathToFile
     async.series([
     function (callback) {
             fs.readFile(__dirname + pathToFile, function (err, data) {
                 parser.parseString(data, function (err, result) {
+                    // console.log('HERE', JSON.stringify(result, null, 2).slice(5000,10000));
                     musicXML2JSONConfig.parsedXML = result;
                     callback(null);
                 });
             });
     }
-
         
         , function (callback) {
-            musicXML2JSONConfig.arrayToHoldNotes = extractAndCleanMusicXML.extractNoteEventsFromParsedXML(musicXML2JSONConfig.parsedXML);
+            musicXML2JSONConfig.divisions = obtainDivisions.obtainDivisions(musicXML2JSONConfig.parsedXML);
             callback(null, 0);
     }
 
-
+        
+        , function (callback) {
+            console.log('IN 2')
+            musicXML2JSONConfig.arrayToHoldNotes = extractAndCleanMusicXML.extractNoteEventsFromParsedXML(musicXML2JSONConfig.parsedXML, musicXML2JSONConfig.divisions);
+            callback(null, 0);
+    }
 
         
         , function (callback) {
+            console.log('In 3')
             musicXML2JSONConfig.arrayToHoldCleanedNotes = extractAndCleanMusicXML.cleanMusicXML(musicXML2JSONConfig.arrayToHoldNotes)
             callback(null, 1)
     }
 
 
+
         
         , function (callback) {
+            console.log('In 4')
             musicXML2JSONConfig.arrayToHoldInstrumentNames = getListsOfVoicesAndInstruments.getListOfDifferentInstrumentNames(musicXML2JSONConfig.arrayToHoldCleanedNotes);
             callback(null, 2)
     }
+
 
 
         
@@ -57,6 +79,7 @@ module.exports.parseRawMusicXML = function (pathToFile) {
     }
 
 
+
         
         , function (callback) {
             musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately = groupByInstrument.groupByInstrument(musicXML2JSONConfig.arrayToHoldInstrumentNames, musicXML2JSONConfig.arrayToHoldCleanedNotes);
@@ -64,18 +87,22 @@ module.exports.parseRawMusicXML = function (pathToFile) {
     }
 
 
+
         
         , function (callback) {
+            //            console.log(JSON.stringify(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately, null, 2))
             musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately = breakUpVoicesAndChords.breakUpVoicesAndChords(musicXML2JSONConfig.arrayToHoldVoiceNames, musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately);
             callback(null, 5)
         }
 
 
+
         
         , function (callback) {
-            musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately = addAttributes.addAttributes(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately);
+            musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately = addAttributes.addAttributes(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately, musicXML2JSONConfig.divisions);
             callback(null, 6)
         }
+
 
 
         
@@ -85,28 +112,25 @@ module.exports.parseRawMusicXML = function (pathToFile) {
         }
 
 
+
         
         , function (callback) {
+            //            console.log(JSON.stringify(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately, null, 2))
             musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately = addNotations.addNotations(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately);
-
             callback(null, 7);
         }
 
-         
+
+        
         , function (callback) {
-            musicXML2JSONConfig.musicJSON = finalClean.finalClean(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately);
-            
-            
+            musicXML2JSONConfig.musicJSON = finalClean.finalClean(musicXML2JSONConfig.arrayToHoldEachInstrumentSeperately, musicXML2JSONConfig.globalMetaData);
             fs.writeFile('../visualization/visualization/data/output.json', JSON.stringify(musicXML2JSONConfig.musicJSON, null, 2), function (err) {
                 if (err) return console.log(err);
             });
-            
-            
-            fs.writeFile('outputData/output.json', JSON.stringify(musicXML2JSONConfig.musicJSON, null, 2), function (err) {
+            fs.writeFile('outputData/' + writeTitle + '.json', JSON.stringify(musicXML2JSONConfig.musicJSON, null, 2), function (err) {
                 if (err) return console.log(err);
                 console.log('Finished. \nMusicJSON file in "outputData/rawData.json" and "../data-visualisation/visualisation/data/rawData.json"');
             });
-           
             callback(null, 8)
         }
 

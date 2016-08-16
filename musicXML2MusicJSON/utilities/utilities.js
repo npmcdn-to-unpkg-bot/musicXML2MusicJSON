@@ -25,7 +25,16 @@ function convertLetterToBasePitch  (letter) {
     }
 }
 module.exports.cleanInstrumentToString = function (instrument) {
-    return instrument[0]["$"]["id"]
+    
+    
+    
+    if (instrument.toString().length <= 3) {
+        return 'Part ' + instrument.toString();
+    }
+    else {
+        return instrument[0]["$"]["id"]
+    }
+  
 }
 
 
@@ -50,3 +59,60 @@ module.exports.convertPitchInformationToMidiNumber = function (pitchInfo) {
     
     return midiNumber;
 }
+
+module.exports.convertLetterAndAlterationToInt = function(letter, alterModeration) {
+    
+    var basePitch = convertLetterToBasePitch(letter)
+    
+    var alteredBassPitch = basePitch + alterModeration;
+    
+    if (isNaN(alteredBassPitch)) {
+        return 0
+    }
+    else {
+        return alteredBassPitch;
+    }
+    
+    //return basePitch + alterModeration;
+}
+
+
+module.exports.convertLetterAndAlterationToName = function(letter, alterModeration) {
+    var basePitch = convertLetterToBasePitch(letter)
+    
+    basePitch = basePitch + alterModeration;
+    
+    
+    if (basePitch === 0) {
+        return 'C'
+    } else if (basePitch === 1) {
+        return 'C#/Db'    
+    }else if (basePitch === 2) {
+        return 'D'    
+    }else if (basePitch === 3) {
+        return 'D#/Eb'    
+    }else if (basePitch === 4) {
+        return 'E'    
+    }else if (basePitch === 5) {
+        return 'F'    
+    }else if (basePitch === 6) {
+        return 'F#/Gb'    
+    }else if (basePitch === 7) {
+        return 'G'    
+    }else if (basePitch === 8) {
+        return 'G#/Ab'    
+    }else if (basePitch === 9) {
+        return 'A'    
+    }else if (basePitch === 10) {
+        return 'A#/Bb'    
+    }else if (basePitch === 11) {
+        return 'B'    
+    }
+    else {
+        return '0'
+    }
+    
+    
+}
+
+

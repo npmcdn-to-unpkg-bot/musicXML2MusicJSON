@@ -15,6 +15,12 @@ module.exports.addNotations = function (musicData) {
                         else {
                             var x = arrayToHoldTieStarts.pop();
                             var index = lodash.indexOf(arrayToHoldEachInstrumentSeperately[i], lodash.find(arrayToHoldEachInstrumentSeperately[i], x));
+                            var valueChangeDueToTie = arrayToHoldEachInstrumentSeperately[i][j].absLocation + arrayToHoldEachInstrumentSeperately[i][j].duration - (arrayToHoldEachInstrumentSeperately[i][index].absLocation)
+                         
+                            arrayToHoldEachInstrumentSeperately[i][index].durationWithNotations = valueChangeDueToTie;
+                            arrayToHoldEachInstrumentSeperately[i][j].durationWithNotations = 0;
+//                            console.log('START', JSON.stringify(arrayToHoldEachInstrumentSeperately[i][index], null, 2))
+//                            console.log('STOP', JSON.stringify(arrayToHoldEachInstrumentSeperately[i][j], null, 2))
                             arrayToHoldTieEnds.push(arrayToHoldEachInstrumentSeperately[i][j])
                         }
                     }

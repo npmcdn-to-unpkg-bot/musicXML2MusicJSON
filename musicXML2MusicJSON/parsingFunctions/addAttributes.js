@@ -1,6 +1,6 @@
 var constants = require('.././utilities/constants')
 
-module.exports.addAttributes = function (musicData) {
+module.exports.addAttributes = function (musicData, divisions) {
     var arrayToHoldEachInstrumentSeperately = musicData;
     var measureStartingLocationInQuarterNotes = 0;
     
@@ -18,7 +18,7 @@ module.exports.addAttributes = function (musicData) {
            
             if (arrayToHoldEachInstrumentSeperately[i][j - 1]) {
                 if (arrayToHoldEachInstrumentSeperately[i][j - 1].measure !== arrayToHoldEachInstrumentSeperately[i][j].measure) {
-                    measureStartingLocationInQuarterNotes = measureStartingLocationInQuarterNotes + (beats * constants.NUMBER_OF_UNITS_IN_QUARTERBEAT);
+                    measureStartingLocationInQuarterNotes = measureStartingLocationInQuarterNotes + (beats * constants.NUMBER_OF_UNITS_IN_QUARTERBEAT) //constants.NUMBER_OF_UNITS_IN_QUARTERBEAT);
                 }
             }
             

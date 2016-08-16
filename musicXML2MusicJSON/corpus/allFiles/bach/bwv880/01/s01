@@ -1,0 +1,2005 @@
+(C) 1994, 2002 Center for Computer Assisted Research in the Humanities.
+ID: {bach/bg/keybd/wtc-ii/0880/stage2/01/s01} [KHM:793218609]
+TIMESTAMP: DEC/26/2001 [md5sum:1314e1462506dc867ec9d120ebb5253a]
+02/09/94 W. Hewlett
+WK#:880       MV#:1
+Bach Gesellschaft xiv   
+Prelude and Fugue in F major
+Prelude XI. 
+
+1 1 
+Group memberships: score 
+score: part 1 of 1 
+&
+Initial conversion from stage 1 to stage 2
+&
+$  K:-1   Q:2   T:3/2   C1:4   C2:22
+rest   1      1 e      1
+E5     1      1 e     d1 [
+F5     1      1 e     d1 =
+G5     1      1 e     d1 ]
+F5     1      1 e     d1 [
+E5     1      1 e     d1 =
+D5     1      1 e     d1 =
+C5     1      1 e     d1 ]
+D5     1      1 e     d1 [
+C5     1      1 e     d1 =
+Bf4    1      1 e     d1 =
+A4     1      1 e     d1 ]
+back  12
+rest   4      5 h      2
+rest   4      5 h      2
+A3     4      5 h     u2
+back  12
+F2     4      6 h     d2
+F3     8-     6 w     d2       -
+measure 2
+Bf4   12-     1 w.    u1       -
+back  12
+rest   1      2 e      1
+A4     1      2 e     d1 [
+G4     1      2 e     d1 =
+F4     1      2 e     d1 ]
+G4     8-     2 w     d1       -
+back  12
+irest  4      3 h      1 
+rest   1      3 e      1
+F4     1      3 e     d1 [
+E4     1      3 e     d1 =
+D4     1      3 e     d1 ]
+E4     4-     3 h     d1       -
+back  12
+D4     4      5 h     u2
+Bf3    4      5 h     u2
+G3     1      5 e     u2 [
+Bf3    1      5 e     u2 =
+C4     1      5 e     u2 =
+D4     1      5 e     u2 ]
+back  12
+F3    12-     6 w.    d2       -
+measure 3
+Bf4    4      1 h     u1
+ G4    4      2 h     u1 
+ E4    4      3 h     u1 
+A4     4      1 h     u1
+ F4    4      2 h     u1 
+ C4    4      3 h     u1 
+Af4    4-     1 h f   u1       -
+ D4    4      3 h     u1 
+ F4    4-     2 h     u1       - 
+P C32:o 
+back  12
+C4     1      5 e     u2 [
+Bf3    1      5 e     u2 =
+A3     1      5 e     u2 =
+G3     1      5 e     u2 ]
+A3     4      5 h     u2
+F3     4-     5 h     u2       -
+back  12
+F3     4-     6 h     d2       -
+F3     1      6 e     d2 [
+G3     1      6 e     d2 =
+F3     1      6 e     d2 =
+E3     1      6 e     d2 ]
+F3     1      6 e     d2 [
+D3     1      6 e     d2 =
+C3     1      6 e     d2 =
+B2     1      6 e n   d2 ]
+measure 4
+Af4    1      1 e     u1 [
+Af4    1      1 e f   u1 =
+G4     1      1 e     u1 =
+F4     1      1 e     u1 ]
+G4     8      1 w     u1
+back  12
+F4     2      2 q     d1
+ C4    2      3 q     d1 
+rest   2      2 q      1
+rest   1      2 e      1
+F4     1      2 e     d1 [
+E4     1      2 e     d1 =
+D4     1      2 e     d1 ]
+E4     4      2 h     d1
+back  12
+F3     1      5 e     u2 [
+F3     1      5 e     u2 =
+E3     1      5 e     u2 =
+D3     1      5 e     u2 ]
+E3     2      5 q     u2
+G3     2      5 q     u2
+C4     2      5 q     u2
+G3     2-     5 q     u2       -
+back  12
+C3     8-     6 w     d2       -
+C3     1      6 e     d2 [
+D3     1      6 e     d2 =
+C3     1      6 e     d2 =
+Bf2    1      6 e     d2 ]
+measure 5
+rest   4      1 h      1
+rest   4      1 h      1
+rest   1      1 e      1
+A4     1      1 e     u1 [
+Bf4    1      1 e     u1 =
+C5     1-     1 e     u1 ]     -
+back  12
+rest   4      2 h      1
+rest   1      2 e      1
+E4     1      2 e     u1 [
+F#4    1      2 e #   u1 =
+G4     1      2 e     u1 ]
+F#4    4-     2 h     u1       -
+P C32:u 
+back  12
+rest   1      3 e      1
+C4     1      3 e     d1 [
+D4     1      3 e     d1 =
+Ef4    1      3 e f   d1 ]
+D4     8-     3 w     d1       -
+back  12
+G3     2      5 q     u2
+G3     2      5 q     u2
+F#3    2      5 q #   u2
+Bf3    2      5 q     u2
+A3     4-     5 h     u2       -
+back  12
+A2     4      6 h     d2
+D3     8      6 w     d2
+measure 6
+C5     4-     1 h     u1       -
+C5     1      1 e     u1 [
+A4     1      1 e     u1 ]
+Bf4    2-     1 q     u1       -
+Bf4    4-     1 h     u1       -
+back  12
+F#4    1      2 e     u1 [
+A4     1      2 e     u1 =
+G4     1      2 e     u1 =
+F#4    1      2 e #   u1 ]
+G4     3      2 q.    d1
+G4     1      2 e     d1
+D4     1      2 e     d1 [
+F4     1      2 e n   d1 =
+E4     1      2 e     d1 =
+D4     1      2 e     d1 ]
+back  12
+D4     4      3 h     d1
+irest  4      3 h      1
+irest  4      3 h      1
+back  12
+A3     2      5 q     u2
+D3     4      5 h     u2
+G3     4      5 h     u2
+G3     2-     5 q     u2       -
+back  12
+G2     4      6 h     d2
+Bf2    4      6 h     d2
+G2     4      6 h     d2
+measure 7
+Bf4    8-     1 w     u1       -
+Bf4    1      1 e     u1 [
+G4     1      1 e     u1 =
+A4     1      1 e     u1 =
+Bf4    1-     1 e     u1 ]     -
+back  12
+E4     4      2 h     d1
+irest  4      2 h      1
+irest  4      2 h      1
+back  12
+irest  4      3 h      1
+rest   1      3 e      1
+D4     1      3 e n   d1 [      +
+E4     1      3 e     d1 =
+F4     1      3 e     d1 ]
+E4     4-     3 h     d1       -
+back  12
+G3     1      5 e     u2 [
+Bf3    1      5 e     u2 =
+C4     1      5 e     u2 =
+Df4    1      5 e f   u2 ]
+C4     8-     5 w     u2       -
+back  12
+C3     4      6 h     d2
+E3     4      6 h     d2
+C3     4      6 h     d2
+measure 8
+Bf4    4-     1 h     u1       -
+Bf4    1      1 e     u1 [
+G4     1      1 e     u1 ]
+A4     2-     1 q     u1       -
+A4     4-     1 h     u1       -
+back  12
+E4     1      3 e     d1 [
+G4     1      3 e     d1 =
+F4     1      3 e     d1 =
+E4     1      3 e     d1 ]
+F4     3      3 q.    d1
+F4     1-     3 e     d1       -
+F4     4-     3 h     d1       -
+back  12
+C4     8-     5 w     u2       -
+C4     1      5 e     u2 [
+Ef4    1      5 e f   u2 =
+D4     1      5 e     u2 =
+C4     1      5 e     u2 ]
+back  12
+F3     4      6 h     d2
+A3     4      6 h     d2
+F3     4      6 h     d2
+measure 9
+A4     1      1 e     u1 [
+C5     1      1 e     u1 =
+D5     1      1 e     u1 =
+Ef5    1      1 e f   u1 ]
+D5     8      1 w     u1
+back  12
+irest  4      2 h      1
+rest   1      2 e      1
+C5     1      2 e     u1 [
+Bf4    1      2 e     u1 =
+A4     1      2 e     u1 ]
+Bf4    4      2 h     u1
+back  12
+F4     4      3 h     d1
+rest   2      3 q      1
+G4     2-     3 q     d1       -
+G4     1      3 e     d1 [
+A4     1      3 e     d1 =
+G4     1      3 e     d1 =
+F4     1      3 e     d1 ]
+back  12
+D4     4      5 h     u2
+rest   2      5 q      2
+D4     6      5 h.    u2
+back  12
+Bf3    2      6 q     d2
+A3     2      6 q     d2
+Bf3    8-     6 w     d2       -
+measure 10
+E5     8      1 w n   u1        +
+ C5    8-     2 w     u1       - 
+P C32:u 
+F5     4-     1 h     u1       - 
+ C5    4      2 h     u1 
+back  12
+G4     8      3 w     d1
+F4     4      3 h     d1
+back  12
+C4     2      5 q     u2
+irest  2      5 q      2
+irest  4      5 h      2
+irest  4      5 h      2
+back  12
+Bf3    1      6 e     d2 [
+Bf3    1      6 e     d2 =
+C4     1      6 e     d2 =
+D4     1      6 e     d2 ]
+C4     1      6 e     d2 [
+Bf3    1      6 e     d2 =
+A3     1      6 e     d2 =
+G3     1      6 e     d2 ]
+A3     1      6 e     d2 [
+G3     1      6 e     d2 =
+F3     1      6 e     d2 =
+E3     1      6 e     d2 ]
+measure 11
+F5     1      1 e     u1 [
+E5     1      1 e     u1 =
+F5     1      1 e     u1 =
+G5     1      1 e     u1 ]
+F5     1      1 e     u1 [
+E5     1      1 e     u1 =
+D5     1      1 e     u1 =
+C5     1      1 e     u1 ]
+D5     1      1 e     u1 [
+C5     1      1 e     u1 =
+B4     1      1 e n   u1 =
+A4     1      1 e     u1 ]
+back  12
+rest   2      3 q      2 
+A3     2      3 q     u2 
+D4     8-     3 w     d1       -
+back  12
+irest  2      5 q      2 
+A3     6-     5 h.    d2       -
+A3     4      5 h     u2
+back  12
+D3     6      6 h.    d2
+E3     2      6 q     d2
+F3     4-     6 h     d2       -
+measure 12
+B4     8      1 w n   u1
+C5     4-     1 h     u1       -
+ G4    4-     2 h     u1       - 
+back  12
+rest   1      2 e      1
+A4     1      2 e     u1 [
+G4     1      2 e     u1 =
+F4     1      2 e     u1 ]
+G4     4-     2 h     u1       -
+irest  4 
+back  12
+D4     4-     3 h     d1       -
+D4     1      3 e     d1 [
+F4     1      3 e     d1 =
+E4     1      3 e     d1 =
+D4     1      3 e     d1 ]
+E4     4-     3 h     d1       -
+back  12
+G3     4      5 h     u2
+rest   4      5 h      2
+rest   1      5 e      2
+B3     1      5 e n   u2 [
+C4     1      5 e     u2 =
+D4     1      5 e     u2 ]
+back  12
+F3     4      6 h     d2
+rest   4      6 h      2
+E3     4-     6 h     d2       -
+measure 13
+C5     6      1 h.    u1
+C5     2      1 q     u1
+D5     2      1 q     u1
+F5     2      1 q     u1
+back  12
+G4     4      2 h     d1
+ E4    4      3 h     d1 
+F4     8-     3 w     d1       -
+back  12
+C4     1      5 e     u2 [
+B3     1      5 e n   u2 =
+A3     1      5 e     u2 =
+G3     1      5 e     u2 ]
+A3     8-     5 w     u2       -
+back  12
+E3     4-     6 h     d2       -
+E3     1      6 e     d2 [
+G3     1      6 e     d2 =
+F3     1      6 e     d2 =
+E3     1      6 e     d2 ]
+F3     1      6 e     d2 [
+E3     1      6 e     d2 =
+D3     1      6 e     d2 =
+C3     1      6 e     d2 ]
+measure 14
+B4     2      1 q n   u1
+C5     2      1 q     u1
+D5     4-     1 h     u1       -
+D5     1      1 e     u1 [
+G4     1      1 e     u1 =
+A4     1      1 e     u1 =
+B4     1      1 e n   u1 ]      +
+back  12
+F4     4-     3 h     d1       -
+F4     1      3 e     d1 [
+F4     1      3 e     d1 =
+E4     1      3 e     d1 =
+D4     1      3 e     d1 ]
+E4     4-     3 h     d1       -
+back  12
+A3     4      5 h     u2
+G3     8      5 w     u2
+back  12
+D3     1      6 e     d2 [
+C3     1      6 e     d2 =
+B2     1      6 e n   d2 =
+A2     1      6 e     d2 ]
+B2     2      6 q     d2
+G2     2      6 q     d2
+C3     2      6 q     d2
+B2     2      6 q n   d2        +
+measure 15
+C5     8-     1 w     u1       -
+C5     2      1 q     u1
+C5     1      1 e     u1 [
+B4     1      1 e n   u1 ]
+back  12
+irest  8      2 w      1
+rest   1      2 e      1
+F4     3-     2 q.    u1       -
+P C32:u 
+back  12
+E4     1      3 e     d1 [
+E4     1      3 e     d1 =
+F4     1      3 e     d1 =
+G4     1      3 e     d1 ]
+A4     1      3 e     d1 [
+G4     1      3 e     d1 =
+F4     1      3 e     d1 =
+E4     1      3 e     d1 ]
+D4     4      3 h     d1
+back  12
+A3     2      5 q     u2
+rest   2      5 q      2
+rest   4      5 h      2
+rest   2      5 q      2
+G3     2-     5 q     u2       -
+back  12
+A2     2      6 q     d2
+G2     2      6 q     d2
+F2     2      6 q     d2
+D2     2      6 q     d2
+G2     4      6 h     d2
+measure 16
+C5    12-     1 w.    u1       -
+back  12
+F4     1      2 e     u1 [
+F4     1      2 e     u1 =
+G4     1      2 e     u1 =
+A4     1      2 e     u1 ]
+G4     8      2 w     u1
+back  12
+C4     4      3 h     d1
+rest   1      3 e      1
+F4     1      3 e     d1 [
+E4     1      3 e     d1 =
+D4     1      3 e     d1 ]
+E4     4-     3 h     d1       -
+back  12
+G3     4      5 h     u2
+irest  4      5 h      2
+rest   1      5 e      2
+D4     1      5 e     u2 [
+C4     1      5 e     u2 =
+B3     1      5 e n   u2 ]
+back  12
+C3     4      6 h     d2
+rest   4      6 h      2
+rest   4      6 h      2
+measure 17
+C5     1      1 e     u1 [
+B4     1      1 e n   u1 =
+C5     1      1 e     u1 =
+D5     1      1 e     u1 ]
+C5     1      1 e     u1 [
+B4     1      1 e n   u1 =      +
+A4     1      1 e     u1 =
+G4     1      1 e     u1 ]
+A4     1      1 e     u1 [
+G4     1      1 e     u1 =
+F4     1      1 e     u1 =
+E4     1      1 e     u1 ]
+back  12
+E4     4      3 h     d1
+rest   4      3 h      1
+rest   4      3 h      1
+back  12
+C4     2      5 q     u2
+G3     2      5 q     u2
+A3     2      5 q     u2
+E3     2      5 q     u2
+F3     2      5 q     u2
+A3     2      5 q     u2
+back  12
+rest   4      6 h      2
+C3     8-     6 w     d2       -
+measure 18
+F4    12-     1 w.    u1       -
+back  12
+rest   1      2 e      1
+E4     1      2 e     d1 [
+D4     1      2 e     d1 =
+C4     1      2 e     d1 ]
+D4     8-     2 w     d1       -
+back  12
+irest  4      3 h      1
+rest   1      3 e      1
+C4     1      3 e     d1 [
+B3     1      3 e n   d1 =
+A3     1      3 e     d1 ]
+B3     4-     3 h     d1       -
+back  12
+D3     2      5 q     u2
+E3     2      5 q     u2
+F3     4-     5 h     u2       -
+F3     1      5 e     u2 [
+F3     1      5 e     u2 =
+G3     1      5 e     u2 =
+A3     1      5 e     u2 ]
+back  12
+C3    12-     6 w.    d2       -
+measure 19
+F4     4      1 h     u1
+ D4    4      2 h     u1 
+ B3    4      3 h     u1 
+E4     4      1 h     u1
+ C4    4      2 h     u1 
+ G3    4      3 h     u1 
+Ef4    4-     1 h f   u1       -
+ A3    4      3 h     u1 
+ C4    4-     2 h     u1       - 
+P C32:o 
+back  12
+G3     1      5 e     u2 [
+F3     1      5 e     u2 =
+E3     1      5 e     u2 =
+D3     1      5 e     u2 ]
+E3     4      5 h     u2
+C3     4-     5 h     u2       -
+back  12
+C3     4-     6 h     d2       -
+C3     1      6 e     d2 [
+D3     1      6 e     d2 =
+C3     1      6 e     d2 =
+B2     1      6 e n   d2 =
+C3     1      6 e     d2 =
+A2     1      6 e     d2 =
+G2     1      6 e     d2 =
+F#2    1      6 e #   d2 ]
+measure 20
+Ef4    1      1 e     u1 [
+Ef4    1      1 e f   u1 =
+D4     1      1 e     u1 =
+C4     1      1 e     u1 ]
+D4     8      1 w     u1
+back  12
+C4     2      2 q     d1 
+ G3    2      3 q     d1 
+rest   2      2 q      1
+rest   1      2 e      1
+C4     1      2 e     d1 [
+B3     1      2 e n   d1 =
+A3     1      2 e     d1 ]
+B3     4      2 h     d1
+back  12
+C3     1      5 e     u2 [
+C3     1      5 e     u2 =
+B2     1      5 e n   u2 =
+A2     1      5 e     u2 ]
+B2     2      5 q     u2
+D3     2      5 q     u2
+G3     2      5 q     u2
+D3     2-     5 q     u2       -
+back  12
+G2     8-     6 w     d2       -
+G2     1      6 e     d2 [
+A2     1      6 e     d2 =
+G2     1      6 e     d2 =
+F2     1      6 e     d2 ]
+measure 21
+rest   4      1 h      1
+rest   4      1 h      1
+rest   1      1 e      1
+E4     1      1 e     u1 [
+F4     1      1 e     u1 =
+G4     1-     1 e     u1 ]     -
+back  12
+rest   4      2 h      1
+rest   1      2 e      1
+B3     1      2 e n   u1 [
+C#4    1      2 e #   u1 =
+D4     1      2 e     u1 ]
+C#4    4-     2 h     u1       -
+P C32:u 
+back  12
+rest   1      3 e      1
+G3     1      3 e     d1 [
+A3     1      3 e     d1 =
+Bf3    1      3 e f   d1 ]      +
+A3     8-     3 w     d1       -
+back  12
+D3     4      5 h     u2
+C#3    2      5 q #   u2
+F3     2      5 q     u2
+E3     4-     5 h     u2       -
+back  12
+E2     4      6 h     d2
+A2     8      6 w     d2
+measure 22
+G4     4-     1 h     u1       -
+G4     1      1 e     u1 [
+E4     1      1 e     u1 ]
+F4     2-     1 q     u1       -
+F4     4-     1 h     u1       -
+back  12
+C#4    1      2 e     u1 [
+E4     1      2 e     u1 =
+D4     1      2 e     u1 =
+C#4    1      2 e #   u1 ]
+D4     3      2 q.    d1
+D4     1      2 e     d1
+A3     1      2 e     d1 [
+C4     1      2 e n   d1 =
+B3     1      2 e n   d1 =
+A3     1      2 e     d1 ]
+back  12
+A3     4      3 h     d1
+irest  4      3 h      1
+irest  4      3 h      1
+back  12
+E3     2      5 q     u2
+A2     4      5 h     u2
+D3     4      5 h     u2
+D3     2-     5 q     u2       -
+back  12
+D2     4      6 h     d2
+F2     4      6 h     d2
+D2     4      6 h     d2
+measure 23
+F4     8-     1 w     u1       -
+F4     1      1 e     u1 [
+D4     1      1 e     u1 =
+E4     1      1 e     u1 =
+F4     1-     1 e     u1 ]     -
+back  12
+B3     4      2 h n   d1
+irest  4      2 h      1
+irest  4      2 h      1
+back  12
+irest  4      3 h      1
+rest   1      3 e      1
+A3     1      3 e n   d1 [      +
+B3     1      3 e n   d1 =      +
+C4     1      3 e     d1 ]
+B3     4-     3 h     d1       -
+back  12
+D3     1      5 e     u2 [
+F3     1      5 e     u2 =
+G3     1      5 e     u2 =
+Af3    1      5 e f   u2 ]
+G3     8-     5 w     u2       -
+back  12
+G2     4      6 h     d2
+B2     4      6 h n   d2
+G2     4      6 h     d2
+measure 24
+F4     4-     1 h     u1       -
+F4     1      1 e     u1 [
+D4     1      1 e     u1 ]
+E4     2-     1 q     u1       -
+E4     4-     1 h     u1       -
+back  12
+B3     1      3 e     d1 [
+D4     1      3 e     d1 =
+C4     1      3 e     d1 =
+B3     1      3 e n   d1 ]
+C4     3      3 q.    d1
+C4     1-     3 e     d1       -
+C4     4-     3 h     d1       -
+back  12
+G3     8-     5 w     u2       -
+G3     1      5 e     u2 [
+Bf3    1      5 e     u2 =
+A3     1      5 e     u2 =
+G3     1      5 e     u2 ]
+back  12
+C3     4      6 h     d2
+E3     4      6 h     d2
+C3     4      6 h     d2
+measure 25
+E4     1      1 e     u1 [
+G4     1      1 e     u1 =
+A4     1      1 e     u1 =
+Bf4    1      1 e     u1 ]
+A4     8      1 w     u1
+back  12
+irest  4      2 h      1
+rest   1      2 e      1
+G4     1      2 e     u1 [
+F4     1      2 e     u1 =
+E4     1      2 e     u1 ]
+F4     4      2 h     u1
+back  12
+C4     4      3 h     d1
+rest   2      3 q      1
+D4     2-     3 q     d1       -
+D4     1      3 e     d1 [
+E4     1      3 e     d1 =
+D4     1      3 e     d1 =
+C4     1      3 e     d1 ]
+back  12
+A3     4      5 h     u2
+rest   2      5 q      2
+A3     6      5 h.    u2
+back  12
+F3     2      6 q     d2
+E3     2      6 q     d2
+F3     8-     6 w     d2       -
+measure 26
+B4     8      1 w n   u1
+ G4    8      2 w     u1 
+C5     4-     1 h     u1       -
+ G4    4      2 h     u1 
+back  12
+D4     8      3 w     d1
+C4     4-     3 h     d1       -
+back  12
+G3     2      5 q     u2
+irest  2      5 q      2
+irest  4      5 h      2
+irest  4      5 h      2
+back  12
+F3     1      6 e     d2 [
+F3     1      6 e     d2 =
+G3     1      6 e     d2 =
+A3     1      6 e     d2 ]
+G3     1      6 e     d2 [
+F3     1      6 e     d2 =
+E3     1      6 e     d2 =
+D3     1      6 e     d2 ]
+E3     1      6 e     d2 [
+D3     1      6 e     d2 =
+C3     1      6 e     d2 =
+Bf2    1      6 e f   d2 ]      +
+measure 27
+C5     1      1 e     u1 [
+C5     1      1 e     u1 =
+D5     1      1 e     u1 =
+Ef5    1      1 e f   u1 ]
+D5     8      1 w     u1
+back  12
+F4     2      2 q     u1
+rest   2      2 q      1
+rest   1      2 e      1
+C5     1      2 e     u1 [
+Bf4    1      2 e     u1 =
+A4     1      2 e     u1 ]
+Bf4    4      2 h     u1
+back  12
+C4     2      3 q     d1
+rest   2      3 q      1
+irest  4      3 h      1
+rest   1      3 e      1
+A4     1      3 e     d1 [
+G4     1      3 e     d1 =
+F4     1      3 e     d1 ]
+back  12
+A2     1      6 e     d2 [
+E3     1      6 e     d2 =
+F3     1      6 e     d2 =
+G3     1      6 e     d2 ]
+F3     1      6 e     d2 [
+Ef3    1      6 e f   d2 =      ^
+D3     1      6 e     d2 =
+C3     1      6 e     d2 ]
+D3     1      6 e     u2 [
+C3     1      6 e     u2 =
+Bf2    1      6 e     u2 =
+A2     1      6 e     u2 ]
+measure 28
+E5     8      1 w n   u1        + 
+F5     4-     1 h     u1       -
+back  12
+Bf4    8      2 w     d1
+ G4    8      3 w     d1 
+C5     2      2 q     d1
+ F4    2      3 q     d1 
+rest   2      2 q      1
+back  12 
+irest 10 
+rest   2      3 q      1
+back  12
+G2     1      6 e     d2 [
+Bf3    1      6 e     d2 =
+C4     1      6 e     d2 =
+D4     1      6 e     d2 ]
+C4     1      6 e     d2 [
+Bf3    1      6 e     d2 =
+A3     1      6 e     d2 =
+G3     1      6 e     d2 ]
+A3     1      6 e     d2 [
+G3     1      6 e     d2 =
+F3     1      6 e     d2 =
+E3     1      6 e     d2 ]
+measure 29
+F5     1      1 e     u1 [
+F5     1      1 e     u1 =
+G5     1      1 e     u1 =
+A5     1      1 e     u1 ]
+G5     1      1 e     u1 [
+F5     1      1 e     u1 =
+E5     1      1 e     u1 =
+D5     1      1 e     u1 ]
+E5     1      1 e     u1 [
+D5     1      1 e     u1 =
+C#5    1      1 e #   u1 =
+B4     1      1 e n   u1 ]
+back  12
+rest   4      5 h      1 
+rest   4      5 h      1 
+rest   1      5 e      1 
+F4     1      5 e     d1 [ 
+E4     1      5 e     d1 = 
+D4     1      5 e     d1 ] 
+back  12
+D3     1      6 e     d2 [
+A3     1      6 e     d2 =
+Bf3    1      6 e     d2 =
+C4     1      6 e     d2 ]
+Bf3    1      6 e     d2 [
+A3     1      6 e     d2 =
+G3     1      6 e     d2 =
+F3     1      6 e     d2 ]
+G3     4-     6 h     d2       -
+measure 30
+C#5    8      1 w #   u1
+D5     4-     1 h     u1       -
+ A4    4-     2 h     u1       - 
+back  12
+rest   1      2 e      1
+Bf4    1      2 e f   u1 [      +
+A4     1      2 e     u1 =
+G4     1      2 e     u1 ]
+A4     4-     2 h     u1       -
+irest  4 
+back  12
+irest  4      3 h      1
+rest   1      3 e      1
+G4     1      3 e     d1 [
+F4     1      3 e     d1 =
+E4     1      3 e     d1 ]
+F4     4-     3 h     d1       -
+back  12
+E4     4      5 h     d1 
+irest  4      5 h      2
+rest   1      5 e      2
+C#4    1      5 e #   u2 [
+D4     1      5 e     u2 =
+E4     1      5 e     u2 ]
+back  12
+G3     8      6 w     d2
+F3     4-     6 h     d2       -
+measure 31
+D5     2      1 q     u1
+ A4    2      2 q     u1 
+F5     2      1 q     u1
+E5     2      1 q     u1
+G5     2      1 q     u1
+C#5    2      1 q #   u1
+D5     2-     1 q     u1       -
+back  12
+F4     2      3 q     d1
+A4     2      3 q     d1
+G4     2      3 q     d1
+Bf4    2      3 q     d1
+E4     2      3 q     d1
+F4     2-     3 q     d1       -
+back  12
+D4     1      5 e     u2 [
+C4     1      5 e n   u2 =      +
+Bf3    1      5 e     u2 =
+A3     1      5 e     u2 ]
+Bf3    4      5 h     u2
+A3     4-     5 h     u2       -
+back  12
+F3     4      6 h     d2
+rest   1      6 e      2
+A3     1      6 e     d2 [
+G3     1      6 e     d2 =
+F3     1      6 e     d2 ]
+G3     1      6 e     d2 [
+F3     1      6 e     d2 =
+E3     1      6 e     d2 =
+D3     1      6 e     d2 ]
+measure 32
+D5     1      1 e     u1 [
+D5     1      1 e     u1 =
+C#5    1      1 e #   u1 =
+B4     1      1 e n   u1 ]
+C#5    8      1 w     u1
+ A4    8      2 w     u1 
+back  12
+F4     1      3 e     d1 [
+F4     1      3 e     d1 =
+E4     1      3 e     d1 =
+D4     1      3 e     d1 ]
+E4     8      3 w     d1
+back  12
+A3     4-     5 h     u2       -
+A3     1      5 e     u2 [
+G3     1      5 e     u2 =
+A3     1      5 e     u2 =
+Bf3    1      5 e     u2 ]
+A3     1      5 e     u2 [
+G3     1      5 e     u2 =
+F3     1      5 e     u2 =
+E3     1      5 e     u2 ]
+back  12
+A3     2      6 q     d2
+A2     2-     6 q     d2       -
+A2     2      6 q     d2
+rest   2      6 q      2
+irest  4      6 h      2
+measure 33
+rest   1      1 e      1
+C#5    1      1 e #   d1 [
+D5     1      1 e     d1 =
+E5     1      1 e     d1 ]
+D5     1      1 e     d1 [
+C5     1      1 e n   d1 =
+Bf4    1      1 e     d1 =
+A4     1      1 e     d1 ]
+Bf4    1      1 e     u1 [
+A4     1      1 e     u1 =
+G4     1      1 e     u1 =
+F4     1      1 e     u1 ]
+back  12
+rest   4      5 h      2
+A3     4      5 h     u2
+D4     4-     5 h     u2       -
+back  12
+F3    12      6 w.    d2
+measure 34
+G4    12-     1 w.    u1       -
+back  12
+rest   1      2 e      1
+F4     1      2 e     u1 [
+E4     1      2 e     u1 =
+D4     1      2 e     u1 ]
+E4     8-     2 w     u1       -
+back  12
+D4     2      5 q     u2
+rest   2      5 q      2
+rest   1      5 e      1 
+D4     1      5 e     d1 [ 
+C#4    1      5 e #   d1 = 
+B3     1      5 e n   d1 ] 
+C#4    4-     5 h     d1       -
+P C32:u 
+back  12
+E3     8      6 w     d2
+rest   1      6 e      2
+G3     1      6 e     d2 [
+A3     1      6 e     d2 =
+Bf3    1      6 e     d2 ]
+measure 35
+G4     4      1 h     u1
+ E4    4      2 h     u1 
+ C#4   4      5 h     u1 
+F4     8-     1 w     u1       -
+back  12
+irest  4 
+D4     8-     2 w     d1       - 
+P C32:o 
+back  12
+irest  4 
+A3     8-     5 w     u2       -
+back  12
+A3     1      6 e     d2 [
+G3     1      6 e     d2 =
+F3     1      6 e     d2 =
+E3     1      6 e     d2 ]
+F3     1      6 e     d2 [
+E3     1      6 e     d2 =
+D3     1      6 e     d2 =
+C#3    1      6 e #   d2 ]
+D3     1      6 e     d2 [
+C3     1      6 e n   d2 =
+B2     1      6 e n   d2 =
+A2     1      6 e     d2 ]
+measure 36
+F4    12-     1 w.    u1       -
+back  12
+D4    12-     2 w.    d1       - 
+P C32:o 
+back  12
+A3     1      5 e     u2 [
+C4     1      5 e     u2 =
+B3     1      5 e n   u2 =
+A3     1      5 e     u2 ]
+G#3    2      5 q #   u2
+A3     2      5 q     u2
+B3     4-     5 h n   u2       -+
+back  12
+B2     4-     6 h n   d2       -
+B2     1      6 e     d2 [
+C3     1      6 e     d2 =
+D3     1      6 e     d2 =
+E3     1      6 e     d2 =
+D3     1      6 e     d2 =
+C3     1      6 e     d2 =
+B2     1      6 e n   d2 =      +
+A2     1      6 e     d2 ]
+measure 37
+F4     4      1 h     u1
+rest   4      1 h      1
+rest   1      1 e      1
+C#4    1      1 e #   u1 [
+D4     1      1 e     u1 =
+E4     1      1 e     u1 ]
+back  12
+D4     4      2 h     d1 
+irest  4      2 h      1
+irest  4      2 h      1
+back  12
+irest  4      3 h      1
+rest   1      3 e      1
+A3     1      3 e     d1 [
+B3     1      3 e n   d1 =
+C4     1      3 e     d1 ]
+B3     4      3 h     d1
+back  12
+B3     1      5 e     u2 [
+D3     1      5 e     u2 =
+E3     1      5 e     u2 =
+F3     1      5 e     u2 ]
+E3     8-     5 w     u2       -
+back  12
+G#2   12      6 w.#   d2
+measure 38
+C#4    1      1 e #   u1 [
+E4     1      1 e     u1 =
+F4     1      1 e     u1 =
+G4     1      1 e     u1 ]
+A4     8-     1 w     u1       -
+back  12
+A3     4-     3 h     d1       -
+A3     1      3 e     d1 [
+B3     1      3 e n   d1 =
+C#4    1      3 e #   d1 =      +
+D4     1      3 e     d1 ]
+E4     4-     3 h     d1       -
+back  12
+E3     4-     5 h     u2       -
+E3     1      5 e     u2 [
+F3     1      5 e     u2 =
+E3     1      5 e     u2 =
+D3     1      5 e     u2 ]
+C#3    4-     5 h #   u2       -
+back  12
+G2     8-     6 w     d2       -
+G2     1      6 e     d2 [
+Bf2    1      6 e f   d2 =      +
+A2     1      6 e     d2 =
+G2     1      6 e     d2 ]
+measure 39
+A4     1      1 e     u1 [
+G4     1      1 e     u1 =
+Bf4    1      1 e     u1 =
+A4     1      1 e     u1 ]
+G4     1      1 e     u1 [
+F4     1      1 e     u1 ]
+E4     2-     1 q     u1       -
+E4     1      1 e     u1 [
+E4     1      1 e     u1 =
+F4     1      1 e     u1 =
+G4     1-     1 e     u1 ]     -
+back  12
+E4     2      3 q     d1
+D4     2-     3 q     d1       -
+D4     3      3 q.    d1
+D4     1      3 e     d1
+C#4    4      3 h #   d1
+back  12
+C#3    2      5 q     u2
+D3     2      5 q     u2
+E3     2      5 q     u2
+F3     2      5 q     u2
+G3     2      5 q     u2
+A3     2      5 q     u2
+back  12
+F2     4      6 h     d2
+G2     4      6 h     d2
+A2     4      6 h     d2
+measure 40
+G4     1      1 e     u1 [
+G4     1      1 e     u1 =
+F4     1      1 e     u1 =
+E4     1      1 e     u1 ]
+F4     8-     1 w     u1       -
+back  12
+D4     4-     3 h     d1       -
+D4     1      3 e     d1 [
+E4     1      3 e     d1 =
+D4     1      3 e     d1 =
+C#4    1      3 e #   d1 ]
+D4     4-     3 h     d1       -
+back  12
+Bf3    2      5 q     u2
+A3     1      5 e     u2 [
+G3     1      5 e     u2 ]
+A3     4-     5 h     u2       -
+A3     1      5 e     u2 [
+C4     1      5 e n   u2 =      +
+Bf3    1      5 e     u2 =
+A3     1      5 e     u2 ]
+back  12
+D3    12-     6 w.    d2       -
+measure 41
+F4     1      1 e     u1 [
+F4     1      1 e     u1 =
+G4     1      1 e     u1 =
+A4     1      1 e     u1 ]
+Bf4    8-     1 w     u1       -
+back  12
+D4     4-     3 h     d1       -
+D4     1      3 e     d1 [
+D4     1      3 e     d1 =
+E4     1      3 e     d1 =
+F4     1      3 e     d1 ]
+G4     2      3 q     d1
+E4     2      3 q     d1
+back  12
+Bf3    6      5 h.    u2
+A3     2      5 q     u2
+G3     4-     5 h     u2       -
+back  12
+D3     1      6 e     d2 [
+D3     1      6 e     d2 =
+E3     1      6 e     d2 =
+F3     1      6 e     d2 ]
+G3     2      6 q     d2
+F3     2-     6 q     d2       -
+F3     1      6 e     d2 [
+E3     1      6 e     d2 =
+D3     1      6 e     d2 =
+C3     1      6 e     d2 ]
+measure 42
+Bf4    1      1 e     u1 [
+Bf4    1      1 e     u1 =
+A4     1      1 e     u1 =
+G4     1      1 e     u1 ]
+A4     8-     1 w     u1       -
+back  12
+C4     4-     3 h     d1       -
+C4     1      3 e     d1 [
+G4     1      3 e     d1 =
+F4     1      3 e     d1 =
+E4     1      3 e     d1 ]
+F4     4-     3 h     d1       -
+back  12
+G3     2      5 q     u2
+F3     1      5 e     u2 [
+E3     1      5 e     u2 ]
+F3     2      5 q     u2
+A3     2-     5 q     u2       -
+A3     1      5 e     u2 [
+E4     1      5 e     u2 =
+D4     1      5 e     u2 =
+C#4    1      5 e #   u2 ]
+back  12
+F3     2      6 q     d2
+F2     2      6 q     d2
+F3     8-     6 w     d2       -
+measure 43
+A4     1      1 e     u1 [
+A4     1      1 e     u1 =
+Bf4    1      1 e     u1 =
+C5     1      1 e     u1 ]
+D5     8-     1 w     u1       -
+back  12
+F4     4-     3 h     d1       -
+F4     1      3 e     d1 [
+F4     1      3 e     d1 =
+G4     1      3 e     d1 =
+A4     1      3 e     d1 ]
+Bf4    2      3 q     d1
+G4     2      3 q     d1
+back  12
+D4     6      5 h.    u2
+C4     2      5 q     u2
+Bf3    4-     5 h     u2       -
+back  12
+F3     1      6 e     d2 [
+F3     1      6 e     d2 =
+G3     1      6 e     d2 =
+A3     1      6 e     d2 ]
+Bf3    2      6 q     d2
+A3     2-     6 q     d2       -
+A3     1      6 e     d2 [
+G3     1      6 e     d2 =
+F3     1      6 e     d2 =
+E3     1      6 e     d2 ]
+measure 44
+D5     1      1 e     u1 [
+D5     1      1 e     u1 =
+C5     1      1 e     u1 =
+Bf4    1      1 e     u1 ]
+C5     8-     1 w     u1       -
+back  12
+E4     4-     3 h     d1       -
+E4     1      3 e     d1 [
+Bf4    1      3 e     d1 =
+A4     1      3 e     d1 =
+G4     1      3 e     d1 ]
+A4     4-     3 h     d1       -
+back  12
+Bf3    2      5 q     u2
+A3     1      5 e     u2 [
+G3     1      5 e     u2 ]
+A3     2      5 q     u2
+C4     2-     5 q     u2       -
+C4     1      5 e     u2 [
+G4     1      5 e     u2 =
+F4     1      5 e     u2 =
+E4     1      5 e     u2 ]
+back  12
+A3     2      6 q     d2
+A2     2      6 q     d2
+A3     8-     6 w     d2       -
+measure 45
+C5     1      1 e     u1 [
+C5     1      1 e     u1 =
+D5     1      1 e     u1 =
+E5     1      1 e     u1 ]
+F5     8-     1 w     u1       -
+back  12
+A4     4-     3 h     d1       -
+A4     1      3 e     d1 [
+A4     1      3 e     d1 =
+B4     1      3 e n   d1 =
+C5     1      3 e     d1 ]
+D5     2      3 q     d1
+B4     2      3 q n   d1        +
+back  12
+F4     6      5 h.    u2
+E4     2      5 q     u2
+D4     4-     5 h     u2       -
+back  12
+A3     1      6 e     d2 [
+A3     1      6 e     d2 =
+B3     1      6 e n   d2 =
+C4     1      6 e     d2 ]
+D4     2      6 q     d2
+C4     2-     6 q     d2       -
+C4     1      6 e     d2 [
+B3     1      6 e n   d2 =      +
+A3     1      6 e     d2 =
+G3     1      6 e     d2 ]
+measure 46
+F5     1      1 e     u1 [
+F5     1      1 e     u1 =
+E5     1      1 e     u1 =
+D5     1      1 e     u1 ]
+E5     8-     1 w     u1       -
+back  12
+irest  8      2 w      1
+C5     4-     2 h     u1       -
+back  12
+G4     4-     3 h     d1       -
+G4     1      3 e     d1 [
+D5     1      3 e     d1 =
+C5     1      3 e     d1 =
+B4     1      3 e n   d1 ]
+rest   1      3 e      1
+B4     1      3 e n   d1 [      +
+A4     1      3 e     d1 =
+G#4    1      3 e #   d1 ]
+back  12
+D4     2      5 q     u2
+C4     1      5 e     u2 [
+B3     1      5 e n   u2 ]
+C4     4      5 h     u2
+irest  4      5 h      2
+back  12
+C4     2      6 q     d2
+C3     2      6 q     d2
+C4     4-     6 h     d2       -
+C4     4      6 h     d2
+measure 47
+E5     4      1 h     u1
+ C5    4      2 h     u1 
+D5     8-     1 w     u1       -
+ B4    8-     2 w n   u1       - 
+back  12
+A4     4      3 h     d1
+A4     8      3 w     d1
+back  12
+rest   1      6 e      2
+E4     1      6 e     d2 [
+F4     1      6 e     d2 =
+G4     1      6 e     d2 ]
+F4     1      6 e     d2 [
+E4     1      6 e     d2 =
+D4     1      6 e     d2 =
+C4     1      6 e     d2 ]
+D4     1      6 e     d2 [
+C4     1      6 e     d2 =
+B3     1      6 e n   d2 =
+A3     1      6 e     d2 ]
+measure 48
+D5    12-     1 w.    u1       -
+ B4   12-     2 w.    u1       - 
+ G#4  12-     3 w.#   u1       - 
+back  12
+rest   4      5 h      1 
+E4     8-     5 w     d1       -
+back  12
+B3     1      6 e n   d2 [
+A3     1      6 e     d2 =
+G#3    1      6 e #   d2 =
+F#3    1      6 e #   d2 ]
+G#3    1      6 e     d2 [
+D3     1      6 e     d2 =
+E3     1      6 e     d2 =
+F3     1      6 e n   d2 ]
+E3     1      6 e     d2 [
+D3     1      6 e     d2 =
+C3     1      6 e     d2 =
+B2     1      6 e n   d2 ]
+measure 49
+D5     1      1 e     u1 [
+ B4    1      2 e     u1 
+ G#4   1      3 e     u1 
+D5     1      1 e     u1 =
+E5     1      1 e     u1 =
+F5     1      1 e     u1 ]
+E5     1      1 e     u1 [
+D5     1      1 e     u1 =
+C5     1      1 e     u1 =
+B4     1      1 e n   u1 ]
+C5     1      1 e     u1 [
+B4     1      1 e     u1 =
+A4     1      1 e     u1 =
+G#4    1      1 e #   u1 ]
+back  12
+irest  1      3 e      1 
+rest   1      3 e      1 
+rest   2      3 q      1 
+rest   4      3 h      1 
+rest   4      3 h      1 
+back  12
+E4     2      5 q     d1 
+E3     2      5 q     u2
+F#3    2      5 q #   u2
+G#3    2      5 q #   u2
+A3     2      5 q     u2
+B3     2      5 q n   u2
+back  12
+C3    12-     6 w.    d2       -
+measure 50
+A4    12-     1 w.    u1       -
+back  12
+rest   1      3 e      1
+G4     1      3 e n   d1 [      +
+F4     1      3 e     d1 =
+E4     1      3 e     d1 ]
+F4     1      3 e     d1 [
+E4     1      3 e     d1 =
+F4     1      3 e     d1 =
+G4     1      3 e     d1 ]
+F4     1      3 e     d1 [
+E4     1      3 e     d1 =
+D4     1      3 e     d1 =
+C#4    1      3 e #   d1 ]
+back  12
+C4     2      5 q     u2
+A3     4      5 h     u2
+C#4    2      5 q #   u2
+D4     2      5 q     u2
+A3     2-     5 q     u2       -
+back  12
+C3     2      6 q     d2
+C#3    2      6 q #   d2
+D3     2      6 q     d2
+E3     2      6 q     d2
+F3     2      6 q     d2
+G3     2      6 q     d2
+measure 51
+A4     1      1 e     u1 [
+G5     1      1 e     u1 =
+A5     1      1 e     u1 =
+Bf5    1      1 e     u1 ]
+A5     1      1 e     u1 [
+G5     1      1 e     u1 =
+F5     1      1 e     u1 =
+E5     1      1 e     u1 ]
+F5     1      1 e     u1 [
+E5     1      1 e     u1 =
+D5     1      1 e     u1 =
+C#5    1      1 e #   u1 ]
+back  12
+D4     1      3 e     d1
+rest   1      3 e      1
+rest   2      3 q      1
+rest   4      3 h      1
+rest   4      3 h      1
+back  12
+A3     2      5 q     u2
+A3     2      5 q     u2
+B3     2      5 q n   u2
+C#4    2      5 q #   u2
+D4     2      5 q     u2
+E4     2      5 q     u2
+back  12
+F3    12-     6 w.    d2       -
+measure 52
+D5     1      1 e     u1 [
+E5     1      1 e     u1 =
+F5     1      1 e     u1 =
+G5     1      1 e     u1 ]
+F5     1      1 e     u1 [
+E5     1      1 e     u1 =
+D5     1      1 e     u1 =
+C#5    1      1 e #   u1 ]
+D5     1      1 e     u1 [
+C5     1      1 e n   u1 =
+Bf4    1      1 e     u1 =
+A4     1      1 e     u1 ]
+back  12
+F4     1      5 e     u2
+rest   1      5 e      2
+rest   2      5 q      2
+rest   4      5 h      2
+rest   4      5 h      2
+back  12
+F3     1      6 e     d2 [
+G3     1      6 e     d2 =
+A3     1      6 e     d2 =
+Bf3    1      6 e     d2 ]
+A3     1      6 e     d2 [
+G3     1      6 e     d2 =
+F3     1      6 e     d2 =
+E3     1      6 e     d2 ]
+F3     1      6 e     d2 [
+E3     1      6 e     d2 =
+D3     1      6 e     d2 =
+C#3    1      6 e #   d2 ]
+measure 53
+Bf4    1      1 e     u1 [
+C5     1      1 e     u1 =
+D5     1      1 e     u1 =
+Ef5    1      1 e f   u1 ]
+D5     1      1 e     u1 [
+C5     1      1 e     u1 =
+Bf4    1      1 e     u1 =
+A4     1      1 e     u1 ]
+Bf4    1      1 e     u1 [
+A4     1      1 e     u1 =
+G#4    1      1 e #   u1 =
+F#4    1      1 e #   u1 ]
+back  12
+rest   2      5 q      2
+F3     2      5 q     u2
+Bf3    2      5 q     u2
+C4     2      5 q     u2
+D4     2      5 q     u2
+C4     2      5 q     u2
+back  12
+D3    12-     6 w.    d2       -
+measure 54
+G#4    2      1 q #   u1
+E4     2      1 q     u1
+rest   2      1 q      1
+B4-    2      1 q n   u1       - 
+D5     4-     1 h     u1       -
+ B4    4-     2 h n   u1       - 
+ G#4   4-     3 q     u1       - 
+back  12
+irest  4      3 h      1 
+G#4    4-     3 q #   u1       -
+P C32:u 
+irest  4 
+back  12
+B3     2      5 q n   u2
+E4     2-     5 q     d1       -
+E4     4-     5 h     d1       -
+E4     4-     5 h     d1       -
+back  12
+D3     1      6 e     d2 [
+D3     1      6 e     d2 =
+E3     1      6 e     d2 =
+F3     1      6 e     d2 ]
+E3     1      6 e     d2 [
+D3     1      6 e     d2 =
+C3     1      6 e     d2 =
+B2     1      6 e n   d2 ]
+C3     1      6 e     d2 [
+B2     1      6 e     d2 =
+A2     1      6 e     d2 =
+G#2    1      6 e #   d2 ]
+measure 55
+D5     2      1 q     u1
+ B4    2      2 q     u1 
+ G#4   2      3 q     u1 
+C5     2-     1 q     u1       -
+ A4    2-     2 q     u1       - 
+C5     1      1 e     u1 [
+C5     1      1 e     u1 =
+B4     1      1 e n   u1 =
+A4     1      1 e     u1 ]
+B4     4      1 h     u1
+back  12
+irest  4 
+A4     4-     2 h     d1       -
+ E4    4-     3 h     d1       - 
+A4     1      2 e     u1 [
+F#4    1      2 e #   u1 ]      + 
+G#4    2      2 q #   u1
+back  12
+irest  2 
+F#4    2      3 q #   d1
+irest  4 
+E4     3      3 q.    d1
+D4     1-     3 e     d1       -
+back  12
+rest   4      4 h      2 
+irest  8      4 w      2 
+back  12
+E4     2      5 q     d1 
+irest  2      5 q      1 
+rest   1      5 e      2
+A2     1      5 e     u2 [
+B2     1      5 e n   u2 =
+C3     1      5 e     u2 ]
+D3     2      5 q n   u2        + 
+E3     2      5 q     u2
+back  12
+A2     1      6 e     d2 [
+F2     1      6 e     d2 =
+E2     1      6 e     d2 =
+D#2    1      6 e #   d2 ]
+E2     8      6 w     d2
+measure 56
+A4    12      1 w.    u1
+back  12
+irest 12      2 w.     1
+&
+Possibly this track doubles the A4 in track one
+as shown below
+A4    12        w.    u
+&
+back  12
+D4     1      3 e     d1 [
+D4     1      3 e     d1 =
+E4     1      3 e     d1 =
+F4     1      3 e     d1 ]
+E4     1      3 e     d1 [
+D4     1      3 e     d1 =
+C#4    1      3 e #   d1 =
+B3     1      3 e n   d1 ]
+C#4    4      3 h     d1
+back  12
+irest  4      4 h      2 
+rest   2      4 q      2 
+G#3    2      4 q #   u2 
+A3     4      4 h     u2 
+ E3    4      5 h     u2 
+back  12
+F3     2      5 q     u2
+D3     2      5 q     u2
+F3     4      5 h     u2
+irest  4 
+back  12
+A2     8-     6 w     d2       -
+A2     1      6 e     d2 [
+Bf2    1      6 e f   d2 =      +
+A2     1      6 e     d2 =
+G2     1      6 e n   d2 ]      +
+measure 57
+rest   1      1 e      1
+E5     1      1 e     d1 [
+F5     1      1 e     d1 =
+G5     1      1 e     d1 ]
+F5     1      1 e     d1 [
+E5     1      1 e     d1 =
+D5     1      1 e     d1 =
+C5     1      1 e     d1 ]
+D5     1      1 e     d1 [
+C5     1      1 e     d1 =
+Bf4    1      1 e     d1 =
+A4     1      1 e     d1 ]
+back  12
+rest   4      5 h      2
+rest   4      5 h      2
+A3     4      5 h     u2
+back  12
+F2     4      6 h     d2
+F3     8-     6 w     d2       -
+measure 58
+Bf4   12-     1 w.    u1       -
+back  12
+rest   1      2 e      1
+A4     1      2 e     d1 [
+G4     1      2 e     d1 =
+F4     1      2 e     d1 ]
+G4     8-     2 w     d1       -
+back  12
+irest  4      3 h      1
+rest   1      3 e      1
+F4     1      3 e     d1 [
+E4     1      3 e     d1 =
+D4     1      3 e     d1 ]
+E4     4-     3 h     d1       -
+back  12
+D4     4      5 h     u2
+Bf3    4      5 h     u2
+G3     1      5 e     u2 [
+Bf3    1      5 e     u2 =
+C4     1      5 e     u2 =
+D4     1      5 e     u2 ]
+back  12
+F3    12-     6 w.    d2       -
+measure 59
+Bf4    4      1 h     u1
+ G4    4      2 h     u1 
+ E4    4      3 h     u1 
+A4     4      1 h     u1
+ F4    4      2 h     u1 
+ C4    4      3 h     u1 
+Af4    4-     1 h f   u1       -
+ D4    4      3 h     u1 
+ F4    4-     2 h     u1       - 
+P C32:o 
+back  12
+C4     1      5 e     u2 [
+Bf3    1      5 e     u2 =
+A3     1      5 e     u2 =
+G3     1      5 e     u2 ]
+A3     4      5 h     u2
+F3     4-     5 h     u2       -
+back  12
+F3     4-     6 h     d2       -
+F3     1      6 e     d2 [
+G3     1      6 e     d2 =
+F3     1      6 e     d2 =
+E3     1      6 e     d2 ]
+F3     1      6 e     d2 [
+D3     1      6 e     d2 =
+C3     1      6 e     d2 =
+B2     1      6 e n   d2 ]
+measure 60
+Af4    1      1 e     u1 [
+Af4    1      1 e f   u1 =
+G4     1      1 e     u1 =
+F4     1      1 e     u1 ]
+G4     8      1 w     u1
+back  12
+F4     2      2 q     d1
+ C4    2      3 q     d1 
+rest   2      2 q      1
+rest   1      2 e      1
+F4     1      2 e     d1 [
+E4     1      2 e     d1 =
+D4     1      2 e     d1 ]
+E4     4      2 h     d1
+back  12
+F3     1      5 e     u2 [
+F3     1      5 e     u2 =
+E3     1      5 e     u2 =
+D3     1      5 e     u2 ]
+E3     2      5 q     u2
+G3     2      5 q     u2
+C4     2      5 q     u2
+G3     2-     5 q     u2       -
+back  12
+C3     8-     6 w     d2       -
+C3     1      6 e     d2 [
+D3     1      6 e     d2 =
+C3     1      6 e     d2 =
+Bf2    1      6 e     d2 ]
+measure 61
+rest   4      1 h      1
+rest   4      1 h      1
+rest   1      1 e      1
+A4     1      1 e     u1 [
+Bf4    1      1 e     u1 =
+C5     1-     1 e     u1 ]     -
+back  12
+rest   4      2 h      1
+rest   1      2 e      1
+E4     1      2 e n   u1 [      +
+F#4    1      2 e #   u1 =
+G4     1      2 e     u1 ]
+F#4    4-     2 h     u1       -
+P C32:u 
+back  12
+rest   1      3 e      1
+C4     1      3 e     d1 [
+D4     1      3 e     d1 =
+Ef4    1      3 e f   d1 ]
+D4     8-     3 w     d1       -
+back  12
+G3     2      5 q     u2
+G3     2      5 q     u2
+F#3    2      5 q #   u2
+Bf3    2      5 q     u2
+A3     4-     5 h     u2       -
+back  12
+A2     4      6 h     d2
+D3     8      6 w     d2
+measure 62
+C5     4-     1 h     u1       -
+C5     1      1 e     u1 [
+A4     1      1 e     u1 ]
+Bf4    2-     1 q     u1       -
+Bf4    4-     1 h     u1       -
+back  12
+F#4    1      2 e     u1 [
+A4     1      2 e     u1 =
+G4     1      2 e     u1 =
+F#4    1      2 e #   u1 ]
+G4     3      2 q.    d1
+G4     1-     2 e     d1       - 
+G4     4-     2 h     d1       -
+ D4    4-     3 h     d1       - 
+back  12
+D4     8      3 w     d1
+irest  4 
+back  12
+A3     2      5 q     u2
+D3     4      5 h     u2
+G3     2-     5 q     u2       -
+G3     1      5 e     u2 [
+F#3    1      5 e #   u2 =
+G3     1      5 e     u2 =
+A3     1      5 e     u2 ]
+back  12
+G2     4      6 h     d2
+Bf2    4      6 h     d2
+D3     4      6 h     d2
+measure 63
+Bf4    1      1 e     u1 [
+G4     1      1 e     u1 =
+A4     1      1 e     u1 =
+Bf4    1      1 e     u1 ]
+rest   1      1 e      1
+D5     1      1 e     u1
+&
+In some sources, the C5 in track 2 may be doubled here
+as shown below
+C5     1        e     u  [
+D5     1        e     u  ]
+&
+Ef5    2-     1 q f   u1       -
+Ef5    4-     1 h     u1       -
+ C5    4-     2 h     u1       - 
+back  12
+G4     1      2 e     d1
+ D4    1      3 e     d1 
+irest  1      2 e      1
+irest  2      2 q      1
+C5     4-     2 h     d1       -
+P C32:u 
+irest  4 
+back  12
+irest  1 
+rest   1      3 e      1
+rest   2      3 q      1
+rest   2      3 q      1
+rest   1      3 e      1
+Bf4    1      3 e     d1
+A4     4-     3 h     d1       -
+back  12
+Bf3    2      5 q     u2
+rest   2      5 q      2
+irest  4      5 h      2
+irest  4      5 h      2
+back  12
+G3     4      6 h     d2
+A3     4      6 h     d2
+F3     1      6 e     d2 [
+G4     1      6 e     d2 =
+F4     1      6 e     d2 =
+Ef4    1      6 e f   d2 ]
+measure 64
+Ef5    4      1 h     u1
+ C5    4      2 h     u1 
+D5     2      1 q     u1
+ Bf4   2      2 q     u1 
+C5     2      1 q     u1
+ A4    2      2 q     u1 
+D5     4-     1 h     u1       -
+back  12
+irest  8 
+Bf4    2      2 q     u1
+Af4    2-     2 q f   u1       -
+back  12
+A4     4      3 h     d1
+F4     8-     3 w     d1       -
+back  12
+D4     1      6 e     d2 [
+C4     1      6 e     d2 =
+Bf3    1      6 e     d2 =
+A3     1      6 e     d2 ]
+Bf3    1      6 e     d2 [
+D3     1      6 e     d2 =
+Ef3    1      6 e f   d2 =
+F3     1      6 e     d2 ]
+Ef3    1      6 e     d2 [
+D3     1      6 e     d2 =
+C3     1      6 e     d2 =
+Bf2    1      6 e     d2 ]
+measure 65
+D5     4      1 h     u1
+C5     4-     1 h     u1       -
+C5     2      1 q     u1
+D5     1      1 e     u1 [
+Ef5    1      1 e f   u1 ]
+back  12
+Af4    1      2 e     u1 [
+F4     1      2 e     u1 =
+G4     1      2 e     u1 =
+Af4    1      2 e f   u1 ]
+G4     8      2 w     u1
+back  12
+F4     1      3 e     d1
+rest   1      3 e      1
+rest   2      3 q      1
+rest   1      3 e      1
+F4     1      3 e     d1 [
+Ef4    1      3 e f   d1 =
+D4     1      3 e     d1 =
+Ef4    1      3 e     d1 =
+D4     1      3 e     d1 =
+C4     1      3 e     d1 =
+Bf3    1      3 e     d1 ]
+back  12
+Ef3    2      6 q f   d2
+D3     2      6 q     d2
+Ef3    8-     6 w     d2       -
+measure 66
+gBf4   6      1 e     u1        (
+S C1:ft25
+A4     8      1 w     u1        )
+Bf4    4-     1 h     u1       -
+P C32:o 
+back  12
+C4     8      3 w     d1 
+ F4    8-     2 w     d1       - 
+P C32:o 
+F4     2      2 q     d1
+ Bf3   2      3 q     d1 
+rest   2      2 q      1
+back  12
+irest 10 
+rest   2      3 q      1
+back  12
+Ef3    1      6 e     d2 [
+Ef3    1      6 e f   d2 =
+F3     1      6 e     d2 =
+G3     1      6 e     d2 ]
+F3     1      6 e     d2 [
+Ef3    1      6 e f   d2 =      +
+D3     1      6 e     d2 =
+C3     1      6 e     d2 ]
+D3     1      6 e     d2 [
+C3     1      6 e     d2 =
+Bf2    1      6 e     d2 =
+A2     1      6 e     d2 ]
+measure 67
+Bf4    1      1 e     u1 [
+A4     1      1 e     u1 =
+Bf4    1      1 e     u1 =
+C5     1      1 e     u1 ]
+Bf4    1      1 e     u1 [
+A4     1      1 e     u1 =
+G4     1      1 e     u1 =
+F4     1      1 e     u1 ]
+G4     1      1 e     u1 [
+F4     1      1 e     u1 =
+E4     1      1 e n   u1 =      +
+D4     1      1 e     u1 ]
+back  12
+rest   2      4 q      2 
+D3     2      4 q     u2 
+G3     8-     4 w     u2       -
+back  12
+G2     6      6 h.    d2
+A2     2      6 q     d2
+Bf2    4-     6 h     d2       -
+measure 68
+E4     8      1 w     u1
+F4     4-     1 h     u1       -
+back  12
+rest   1      3 e      1
+D4     1      3 e     d1 [
+C4     1      3 e     d1 =
+Bf3    1      3 e     d1 ]
+C4     4-     3 h     d1       -
+C4     4-     3 h     d1       -
+back  12
+G3     4-     4 h     u2       -
+G3     1      4 e     u2 [ 
+Bf3    1      4 e     u2 = 
+A3     1      4 e     u2 = 
+G3     1      4 e     u2 ] 
+A3     4-     4 h     u2       -
+back  12
+irest  8      5 w      2
+rest   1      5 e      2
+E3     1      5 e     u2 [
+F3     1      5 e     u2 =
+G3     1      5 e     u2 ]
+back  12
+Bf2    4      6 h     d2
+rest   4      6 h      2
+A2     4-     6 h     d2       -
+measure 69
+F4     4-     1 h     u1       -
+F4     2      1 q     u1
+F4     2      1 q     u1
+G4     2      1 q     u1
+A4     1      1 e     u1 [
+Bf4    1      1 e     u1 ]
+back  12
+C4     4      3 h     d1
+Bf3    8-     3 w     d1       -
+back  12
+A3     4      4 h     u2 
+irest  4      4 h      2 
+irest  4      4 h      2 
+back  12
+F3     1      5 e     u2 [
+E3     1      5 e     u2 =
+D3     1      5 e     u2 =
+C3     1      5 e     u2 ]
+D3     8-     5 w     u2       -
+back  12
+A2     4-     6 h     d2       -
+A2     1      6 e     d2 [
+C3     1      6 e     d2 =
+Bf2    1      6 e     d2 =
+A2     1      6 e     d2 ]
+Bf2    1      6 e     d2 [
+A2     1      6 e     d2 =
+G2     1      6 e     d2 =
+F2     1      6 e     d2 ]
+measure 70
+E4     2      1 q     u1
+F4     2      1 q     u1
+G4     4-     1 h     u1       -
+G4     1      1 e     u1 [
+C4     1      1 e     u1 =
+D4     1      1 e     u1 =
+E4     1      1 e     u1 ]
+back  12
+Bf3    4-     3 h     d1       -
+Bf3    1      3 e     d1 [
+Bf3    1      3 e     d1 =
+A3     1      3 e     d1 =
+G3     1      3 e     d1 ]
+A3     4-     3 h     d1       -
+back  12
+D3     4      5 h     u2
+C3     8-     5 w     u2       -
+back  12
+G2     1      6 e     d2 [
+F2     1      6 e     d2 =
+E2     1      6 e     d2 =
+D2     1      6 e     d2 ]
+E2     2      6 q     d2
+C2     2      6 q     d2
+F2     2      6 q     d2
+E2     2      6 q     d2
+measure 71
+F4     8-     1 w     u1       -
+F4     2      1 q     u1
+F4     1      1 e     u1 [
+E4     1      1 e     u1 ]
+back  12
+irest  8      2 w      1
+rest   1      2 e      1
+Bf3    3-     2 q.    d1       -
+back  12
+A3     1      3 e     d1 [
+A3     1      3 e     d1 =
+Bf3    1      3 e     d1 =
+C4     1      3 e     d1 ]
+D4     1      3 e     d1 [
+C4     1      3 e     d1 =
+Bf3    1      3 e     d1 =
+A3     1      3 e     d1 ]
+G3     4      3 h     d1
+back  12
+C3     2      5 q     u2
+C3     2      5 q     u2
+Bf2    4      5 h     u2
+C3     4-     5 h     u2       -
+P C32:o 
+back  12
+D2     4      6 h     d2
+rest   2      6 q      2
+G2     2      6 q     d2
+C3     2      6 q     d2
+C2     2      6 q     d2
+measure 72
+F4    12      1 w.    u1        F
+back  12
+Bf3    1      2 e     d1 [
+Bf3    1      2 e     d1 =
+A3     1      2 e     d1 =
+G3     1      2 e     d1 ]
+A3     8      2 w     d1        F
+back  12
+F3     4-     3 h     u2       -
+F3     1      3 e     u2 [ 
+G3     1      3 e     u2 = 
+F3     1      3 e     u2 = 
+E3     1      3 e     u2 ] 
+F3     4      3 h     u2        F
+back  12
+C3    12      5 w.    d2
+ F2   12      6 w.    d2        E 
+mheavy2
+/END
